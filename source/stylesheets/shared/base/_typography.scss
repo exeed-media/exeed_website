@@ -1,0 +1,30 @@
+h1,
+h2 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 8em;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  &:visited {
+    color: $base-font-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-color;
+  }
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,26 @@
+.landing {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-area: landing;
+  justify-content: space-around;
+  padding: 0 1.3rem;
+
+  h1 {
+    border-top: 2px solid $base-border-color-1;
+    font-size: 1.6em;
+    letter-spacing: .1rem;
+    margin: 5.5rem 0;
+    padding-top: 2rem;
+  }
+
+  h2 {
+    border-bottom: 2px solid $base-border-color-1;
+    font-size: 6.8em;
+    padding-bottom: 1rem;
+
+    a {
+      color: $exeed-turquoise;
+    }
+  }
+}

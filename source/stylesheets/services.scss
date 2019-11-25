@@ -1,0 +1,129 @@
+.services {
+  display: grid;
+  grid-area: services;
+  grid-template-columns: repeat(20, 5vw);
+  grid-template-rows: repeat(137, 6vw);
+  padding-bottom: 1rem;
+
+  > * {
+    margin-top: 0;
+  }
+
+  > h1 {
+    align-self: flex-start;
+    border-bottom: 2px solid $base-border-color-1;
+    font-size: $font-size-content;
+    grid-column: 1 / 21;
+    grid-row: 1 / 2;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    text-align: right;
+    text-transform: lowercase;
+  }
+}
+
+.service-image {
+  margin: 0;
+
+  img {
+    height: 100%;
+    min-height: 27.5rem;
+    min-width: 32rem;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.service-info {
+  min-height: auto;
+
+  h1 {
+    border-bottom: 1px solid $base-border-color-1;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: $font-size-content;
+    line-height: $base-line-height;
+  }
+}
+
+.colorbox:nth-of-type(1) {
+  background-color: $service-website-background;
+  grid-column: 2 / 20;
+  grid-row: 3 / 23;
+}
+
+.service-image:nth-of-type(1) {
+  grid-column: 1 / 21;
+  grid-row: 7 / 20;
+}
+
+.service-info:nth-of-type(1) {
+  grid-column: 2 / 20;
+  grid-row: 24 / 29;
+}
+
+.colorbox:nth-of-type(2) {
+  background-color: $service-content-background;
+  grid-column: 2 / 20;
+  grid-row: 29 / 50;
+}
+
+.service-image:nth-of-type(2) {
+  grid-column: 1 / 20;
+  grid-row: 34 / 45;
+}
+
+.service-info:nth-of-type(2) {
+  grid-column: 2 / 20;
+  grid-row: 51 / 56;
+}
+
+.colorbox:nth-of-type(3) {
+  background-color: $service-video-background;
+  grid-column: 2 / 20;
+  grid-row: 57 / 77;
+}
+
+.service-image:nth-of-type(3) {
+  grid-column: 1 / 21;
+  grid-row: 61 / 70;
+}
+
+.service-info:nth-of-type(3) {
+  grid-column: 2 / 20;
+  grid-row: 78 / 86;
+}
+
+.colorbox:nth-of-type(4) {
+  background-color: $service-marketing-background;
+  grid-column: 2 / 20;
+  grid-row: 84 / 104;
+}
+
+.service-image:nth-of-type(4) {
+  grid-column: 1 / 21;
+  grid-row: 85 / 107;
+}
+
+.service-info:nth-of-type(4) {
+  grid-column: 2 / 20;
+  grid-row: 105 / 110;
+}
+
+.colorbox:nth-of-type(5) {
+  background-color: $service-branding-background;
+  grid-column: 2 / 20;
+  grid-row: 111 / 131;
+}
+
+.service-image:nth-of-type(5) {
+  grid-column: 2 / 21;
+  grid-row: 115 / 123;
+}
+
+.service-info:nth-of-type(5) {
+  grid-column: 2 / 20;
+  grid-row: 132 / 137;
+}
