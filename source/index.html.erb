@@ -1,10 +1,7 @@
 <div class="container">
   <header class="header">
       <div class="logo"><%= image_tag "exeed_logo.svg" %></div>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-      </div>
+      <div class="menu-icon" id="menu_icon"></div>
       <div class="menu">
         <nav class="main-links">
           <ul>
@@ -26,7 +23,7 @@
 
   <section class="landing">
     <h1>Social Media Marketing Agency</h1>
-    <h2><a href="#">Digitalize</a>Your Brand</h2>
+    <h2><a href="#"><div id="landing_text"></div></a>Your Brand</h2>
   </section>
 
   <section class="services">
@@ -34,7 +31,7 @@
 
     <div class="colorbox"></div>
     <figure class="service-image">
-      <%= image_tag "laptop.png" %>
+      <%= image_tag "laptop_opt.png" %>
     </figure>
     <section class="service-info">
       <h1>01. Website Design</h1>
@@ -43,16 +40,16 @@
 
     <div class="colorbox"></div>
     <figure class="service-image">
-      <%= image_tag "notebook.png" %>
+      <%= image_tag "notebook_opt2.png" %>
     </figure>
     <section class="service-info">
       <h1>02. Content Creation</h1>
-      <p>Words written as an immersive story that drives you towards action. Published through multiple communication channels including socila media on daily basis.</p>
+      <p>Words written as an immersive story that drives you towards action. Published through multiple communication channels including social media on a daily basis.</p>
     </section>
 
     <div class="colorbox"></div>
     <figure class="service-image">
-      <%= image_tag "lens.png" %>
+      <%= image_tag "lens_opt2.png" %>
     </figure>
     <section class="service-info">
       <h1>03. Video Production</h1>
@@ -61,7 +58,7 @@
 
     <div class="colorbox"></div>
     <figure class="service-image">
-      <%= image_tag "phone.png" %>
+      <%= image_tag "phone_opt.png" %>
     </figure>
     <section class="service-info">
       <h1>04. Digital Marketing</h1>
@@ -70,7 +67,7 @@
 
     <div class="colorbox"></div>
     <figure class="service-image">
-      <%= image_tag "sliced_logo.png" %>
+      <%= image_tag "sliced_logo_opt.png" %>
     </figure>
     <section class="service-info">
       <h1>05. Branding</h1>
@@ -80,27 +77,8 @@
 
   <section class="our-process">
     <h1>Our Process</h1>
-    <div class="step concept">
-      <h2>Step <strong>01</strong></h2>
-      <p>We work starting from ideation and concept validation. We use sketches, wireframes and other abstract graphic representations to quickly structure a broad view of the project.</p>
-      <h3>Concept</h3>
-
-    </div>
-    <div class="step design">
-      <h2>Step <strong>02</strong></h2>
-      <p>The creative stage is defined with more detail, in the context of an established main objective by the brand while considering the digital aspect. This step includes prototyping to get a better idea of the experience.</p>
-      <h3>Design</h3>
-    </div>
-    <div class="step development">
-      <h2>Step <strong>03</strong></h2>
-      <p>Our development process follows an agile approach converting the design into a living dynamic entity that enhances the user experience. We fully optimize the performance, accessibility and other technical details.</p>
-      <h3>Development</h3>
-    </div>
-    <div class="step marketing">
-      <h2>Step <strong>04</strong></h2>
-      <p>We use targeted digital marketing to engage and expand your audience using tested strategies and marketing plans. Our mission is to help your brand with solutions that get results before the great launch.</p>
-      <h3>Marketing</h3>
-    </div>
+    <div id="our_process_mobile"></div>
+    <div id="our_process"></div>
   </section>
 
   <section class="who-we-are">
@@ -119,10 +97,11 @@
       </p>
     </div>
     <div class="team">
-      <%= image_tag "matt_dan.png" %>
+      <%= image_tag "matt_dan_opt.png" %>
       <div class="team-info">
         <h1>Team</h1>
         <p>Fully talented and dedicated team that puts emphasis on clean design following a structured process of development in all the client projects making sure it’s a master piece.</p>
+        <br />
         <p>Matt - Creative Director</p>
         <p>Dan - Technical Director</p>
       </div>
@@ -130,27 +109,45 @@
   </section>
 
   <section class="work-with-us">
-    <h1>Work With Us</h1>
     <form class="work-with-us-form" action="/" method="post">
+      <h1>Work With Us</h1>
       <label for="">01. Name:</label>
       <input type="text" name="" value="">
       <label for="">02. Email:</label>
       <input type="text" name="" value="">
       <label for="">03. Description:</label>
       <textarea name="name" rows="8"></textarea>
-      <button type="submit" name="button" class="submit-button">Send</button>
+      <button type="submit" name="button" class="submit-button" id="submit_button"></button>
     </form>
+    <div class="enticement">
+      <h3>Got a big idea? <br /> Let's see what we can make of it<span>.</span></h3>
+      <div class="links">
+        <a href="#">exeed.media@gmail.com</a>
+        <ul class="social-media">
+          <li><a href="#"><%= image_tag "facebook.svg" %></a></li>
+          <li><a href="#"><%= image_tag "instagram.png" %></a></li>
+          <li><a href="#"><%= image_tag "linkedin.png" %></a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
-    <h2>Where <strong>design</strong> meets <strong>functionality.</strong></h2>
-    <nav>
-      <ul>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Who we are</a></li>
-        <li><a href="#">Work with us</a></li>
-      </ul>
-    </nav>
-    <p>Exeed © 2019</p>
+    <div class="content">
+      <h2>Where <strong>design</strong> meets <strong>functionality.</strong></h2>
+      <nav>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Work with us</a></li>
+          <ul class="social-media">
+            <li><a href="#"><%= image_tag "facebook.svg" %></a></li>
+            <li><a href="#"><%= image_tag "instagram.png" %></a></li>
+            <li><a href="#"><%= image_tag "linkedin.png" %></a></li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+    <p>Exeed © 2020</p>
   </footer>
 </div>

@@ -64,3 +64,31 @@
     }
   }
 }
+
+section.our-process {
+  min-height: 30vh;
+}
+
+#our_process {
+  height: 70vh;
+}
+
+#our_process_mobile {
+  display: none;
+}
+
+@media screen and (min-width: 55em) {
+  section.our-process {
+    min-height: 100vh;
+  }
+
+  #our_process {
+    height: 80vh;
+    display: block;
+  }
+
+  #our_process_mobile {
+    height: 80vh;
+    display: none;
+  }
+}

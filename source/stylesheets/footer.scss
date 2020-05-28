@@ -27,6 +27,20 @@
       font-size: 1.7em;
       font-weight: $sans-serif-regular;
     }
+
+		ul.social-media {
+			margin-top: .5rem;
+
+			li {
+				display: inline-block;
+				margin-right: 1rem;
+
+				img {
+					height: 2rem;
+			    width: 2rem;
+				}
+			}
+		}
   }
 
   p {
@@ -37,4 +51,24 @@
     padding-top: 1.5rem;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 55em) {
+  .content {
+    display: flex;
+  }
+
+	.footer {
+		padding: 4rem 4rem 0;
+
+		h2 {
+			flex: 1;
+		}
+
+		ul {
+			flex: 1;
+			justify-content: flex-end;
+			margin-top: 4rem;
+		}
+	}
 }

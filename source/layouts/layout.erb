@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title><%= current_page.data.title || "Exeed" %></title>
+
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.js" %>
+    <%= javascript_include_tag "header" %>
+    <%= javascript_include_tag "landing" %>
+    <%= javascript_include_tag "our_process" %>
+    <%= javascript_include_tag "work_with_us" %>
   </head>
   <body>
     <%= yield %>

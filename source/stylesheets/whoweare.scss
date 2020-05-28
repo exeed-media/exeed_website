@@ -50,3 +50,22 @@
     line-height: $base-line-height;
   }
 }
+
+@media screen and (min-width: 55em) {
+  .philosophy {
+    flex-direction: row;
+
+    p {
+      margin-left: 8rem;
+      margin-right: 5rem;
+    }
+  }
+
+  .team {
+    flex-direction: row;
+  }
+
+  .team-info {
+    margin: 0 7rem;
+  }
+}
