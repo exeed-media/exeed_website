@@ -11,8 +11,8 @@
 
   > h1 {
     align-self: flex-start;
-    border-bottom: 2px solid $base-border-color-1;
-    font-size: $font-size-content;
+    border-bottom: 2px solid rgba(0, 0, 0, .9);
+    font-size: 1.2em;
     grid-column: 1 / 21;
     grid-row: 1 / 2;
     margin: 0 2rem;
@@ -38,18 +38,18 @@
   min-height: auto;
 
   h1 {
-    border-bottom: 1px solid $base-border-color-1;
+    border-bottom: 1px solid rgba(0, 0, 0, .9);
     margin-top: 0;
   }
 
   p {
-    font-size: $font-size-content;
-    line-height: $base-line-height;
+    font-size: 1.2em;
+    line-height: 1.4;
   }
 }
 
 .colorbox:nth-of-type(1) {
-  background-color: $service-website-background;
+  background-color: #829191;
   grid-column: 2 / 20;
   grid-row: 3 / 23;
 }
@@ -65,7 +65,7 @@
 }
 
 .colorbox:nth-of-type(2) {
-  background-color: $service-content-background;
+  background-color: #72DDDD;
   grid-column: 2 / 20;
   grid-row: 32 / 53;
 }
@@ -81,7 +81,7 @@
 }
 
 .colorbox:nth-of-type(3) {
-  background-color: $service-video-background;
+  background-color: #26547C;
   grid-column: 2 / 20;
   grid-row: 63 / 83;
 }
@@ -97,7 +97,7 @@
 }
 
 .colorbox:nth-of-type(4) {
-  background-color: $service-marketing-background;
+  background-color: #EF476F;
   grid-column: 2 / 20;
   grid-row: 93 / 113;
 }
@@ -113,7 +113,7 @@
 }
 
 .colorbox:nth-of-type(5) {
-  background-color: $service-branding-background;
+  background-color: #E85517;
   grid-column: 2 / 20;
   grid-row: 124 / 144;
 }

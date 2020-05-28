@@ -7,7 +7,7 @@
   padding: 0 1.3rem;
 
   h1 {
-    border-top: 2px solid $base-border-color-1;
+    border-top: 2px solid rgba(0, 0, 0, .9);
     font-size: 1.6em;
     letter-spacing: .1rem;
     margin: 5.5rem 0;
@@ -15,12 +15,12 @@
   }
 
   h2 {
-    border-bottom: 2px solid $base-border-color-1;
+    border-bottom: 2px solid rgba(0, 0, 0, .9);
     font-size: 6.2em;
     padding-bottom: 1rem;
 
     a {
-      color: $exeed-turquoise;
+      color: #72DDDD;
     }
   }
 }

@@ -14,8 +14,8 @@
   padding: 0 2rem 2.3rem;
 
   > h1 {
-    border-bottom: 2px solid $base-border-color-1;
-    font-size: $font-size-content;
+    border-bottom: 2px solid rgba(0, 0, 0, .9);
+    font-size: 1.2em;
     padding: 0 2rem;
     text-align: right;
     text-transform: lowercase;
@@ -60,13 +60,13 @@
   > h3 {
     color: #FFF;
     border-top: 1px solid #FFF;
-    font-weight: $sans-serif-regular;
+    font-weight: 400;
     font-size: 2em;
-    line-height: $base-line-height;
+    line-height: 1.4;
     padding-top: 1.5rem;
 
     span {
-      color: $exeed-turquoise;
+      color: #72DDDD;
     }
   }
 

@@ -31,7 +31,7 @@
 }
 
 .menu {
-	background: $base-background-1;
+	background: #FFF;
   display: flex;
   flex-direction: column;
 	height: 100%;
@@ -64,14 +64,14 @@
   top: 23vh;
 
   a {
-    border-bottom: .1rem solid $base-border-color-1;
+    border-bottom: .1rem solid rgba(0, 0, 0, .9);
     color: rgba(0, 0, 0, .5);
     font-size: 3em;
   }
 }
 
 .social-media-links {
-  background-color: $base-background-2;
+  background-color: #1E1F21;
   bottom: 0;
   flex: 1;
   position: relative;
@@ -104,7 +104,7 @@
   z-index: 1;
 
   > span {
-    background-color: $base-background-2;
+    background-color: #1E1F21;
     display: block;
     height: .2rem;
     margin: 0 0 .5rem;
