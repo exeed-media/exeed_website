@@ -22,7 +22,7 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
-ignore "*.scss"
+# ignore "*.scss"
 
 activate :external_pipeline,
          name: :sass,
