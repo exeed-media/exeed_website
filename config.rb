@@ -1,48 +1,39 @@
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
+activate :aria_current
+activate :autoprefixer
+activate :inline_svg
 activate :livereload
 
-# Layouts
-# https://middlemanapp.com/basics/layouts/
+set :css_dir, "assets/stylesheets"
+set :fonts_dir, "assets/fonts"
+set :images_dir, "assets/images"
+set :js_dir, "assets/javascripts"
+set :markdown,
+  autolink: true,
+  fenced_code_blocks: true,
+  footnotes: true,
+  highlight: true,
+  smartypants: true,
+  strikethrough: true,
+  tables: true,
+  with_toc_data: true
+set :markdown_engine, :redcarpet
 
-# Per-page layout changes
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
+page "/*.xml", layout: false
 
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
+ignore "*.scss"
 
-# Proxy pages
-# https://middlemanapp.com/advanced/dynamic-pages/
+activate :external_pipeline,
+         name: :sass,
+         command: build? ? "bin/sass" : "bin/sass development",
+         source: "tmp",
+         latency: 1
 
-# proxy(
-#   '/this-page-has-no-template.html',
-#   '/template-file.html',
-#   locals: {
-#     which_fake_page: 'Rendering a fake page with a local variable'
-#   },
-# )
-
-# Helpers
-# Methods defined in the helpers block are available in templates
-# https://middlemanapp.com/basics/helper-methods/
-
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
-
-# Build-specific configuration
-# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
-
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :production do
+  activate :asset_hash
+  activate :gzip
+  activate :minify_css
+  activate :minify_html
+  activate :minify_javascript
+end

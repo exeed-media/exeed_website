@@ -1,5 +1,10 @@
 source "https://rubygems.org"
 
-gem "middleman", "~> 4.2"
-gem "middleman-autoprefixer", "~> 2.7"
+gem "builder"
+gem "middleman"
+gem "middleman-aria_current"
+gem "middleman-inline_svg"
+gem "middleman-autoprefixer"
 gem "middleman-livereload"
+gem "middleman-minify-html"
+gem "redcarpet"
