@@ -8,11 +8,11 @@ window.addEventListener("load", function (event) {
     path: 'https://assets2.lottiefiles.com/packages/lf20_39nwLN.json'
   });
 
-  let scrollPos = 0;
-  const nav = document.querySelector('.logo');
+  var scrollPos = 0;
+  var nav = document.querySelector('.logo');
 
   function checkPosition() {
-    let windowY = window.scrollY;
+    var windowY = window.scrollY;
     if (windowY < scrollPos) {
       // Scrolling UP
       nav.classList.add('is-visible');
