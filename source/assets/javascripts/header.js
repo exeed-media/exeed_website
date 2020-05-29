@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", function (event) {
   var container = document.getElementById('menu_icon');
   var anim = lottie.loadAnimation({
     container: container,

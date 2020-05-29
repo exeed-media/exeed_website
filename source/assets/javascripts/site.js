@@ -1,7 +1,7 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", function (event) {
   const menuIcon = document.querySelector(".menu-icon");
 
-  menuIcon.addEventListener("click", () => {
+  menuIcon.addEventListener("click", function () {
     menuIcon.classList.toggle("menu-icon-expanded");
   });
 });

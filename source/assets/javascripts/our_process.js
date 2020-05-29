@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", function (event) {
   var container = document.getElementById('our_process');
 
   var anim = lottie.loadAnimation({
