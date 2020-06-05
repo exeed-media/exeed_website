@@ -6,6 +6,6 @@ window.addEventListener("load", function (event) {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://assets1.lottiefiles.com/packages/lf20_zDQ3xp.json'
+    path: 'https://assets6.lottiefiles.com/packages/lf20_CSb3dP.json'
   });
 });
