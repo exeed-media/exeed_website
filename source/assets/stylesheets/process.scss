@@ -70,11 +70,11 @@ section.our-process {
 }
 
 #our_process {
-  height: 70vh;
+  display: none;
 }
 
 #our_process_mobile {
-  display: none;
+  height: 70vh;
 }
 
 @media screen and (min-width: 55em) {
@@ -88,7 +88,6 @@ section.our-process {
   }
 
   #our_process_mobile {
-    height: 80vh;
     display: none;
   }
 }
