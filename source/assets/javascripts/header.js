@@ -5,8 +5,20 @@ window.addEventListener("load", function (event) {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://assets2.lottiefiles.com/packages/lf20_39nwLN.json'
+    initialSegment: [1, 180],
+    path: 'https://assets1.lottiefiles.com/packages/lf20_OyAQAL.json'
   });
+
+  container.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    if(container.classList.contains("menu-icon-expanded")) {
+      anim.playSegments([[200, 215], [215, 220]], true);
+    } else {
+      anim.playSegments([[425, 445], [80, 190], [1, 180]], true);
+    }
+  });
+
 
   var scrollPos = 0;
   var nav = document.querySelector('.logo');
