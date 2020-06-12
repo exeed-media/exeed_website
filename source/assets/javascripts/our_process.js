@@ -6,7 +6,7 @@ window.addEventListener("load", function (event) {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://assets6.lottiefiles.com/packages/lf20_CSb3dP.json'
+    path: 'https://assets10.lottiefiles.com/packages/lf20_GsnwT8.json'
   });
 
   var mobile_container = document.getElementById('our_process_mobile');
@@ -16,6 +16,6 @@ window.addEventListener("load", function (event) {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://assets2.lottiefiles.com/packages/lf20_Nwp8B5.json'
+    path: 'https://assets7.lottiefiles.com/packages/lf20_FXF4w4.json'
   });
 });
