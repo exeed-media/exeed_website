@@ -8,8 +8,6 @@ window.addEventListener("load", function() {
       Array.prototype.forEach.call(elementsToShow, function(element){
         if (isElementInViewport(element)) {
           element.classList.add('is-visible');
-        } else {
-          element.classList.remove('is-visible');
         }
       });
 
