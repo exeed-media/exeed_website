@@ -38,4 +38,13 @@ window.addEventListener("load", function (event) {
   }
 
   window.addEventListener('scroll', checkPosition);
+
+
+  var menuLinks = document.querySelectorAll('nav.main-links a');
+
+  menuLinks.forEach(function(menuLink) {
+    menuLink.addEventListener('click', function(e) {
+      container.click();
+    });
+  })
 });
