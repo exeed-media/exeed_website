@@ -11,18 +11,18 @@ window.addEventListener("load", function (event) {
   });
 
   container.addEventListener('mouseenter', function () {
-    console.log('mouse enter');
     anim.playSegments([25, 70], true);
   });
 
   container.addEventListener('mouseleave', function () {
-    console.log('mouse leave');
     anim.playSegments([0, 25], true);
   });
 
   container.addEventListener('click', function (e) {
     e.preventDefault();
-    console.log('mouse click');
     anim.playSegments([70, 175], true);
+    setTimeout(function() {
+      document.querySelector('.work-with-us-form').submit();
+    }, 1000);
   });
 });
