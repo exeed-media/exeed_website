@@ -661,7 +661,7 @@ ul {
 @media screen and (min-width: 55em) {
   .landing {
     overflow-x: hidden;
-    padding: 0;
+    padding-bottom: 7rem;
     position: relative;
   }
   .landing h1 {
@@ -727,7 +727,6 @@ ul {
 .services > h1 {
   align-self: flex-start;
   font-size: 5em;
-  margin-bottom: 8rem;
   margin-left: 2.3rem;
 }
 .services > h1 span {
@@ -735,27 +734,40 @@ ul {
 }
 .services > div {
   display: flex;
+  margin-top: 7rem;
 }
 .services .service-image {
   border-bottom-right-radius: 8rem;
   border-top-right-radius: 8rem;
-  height: 15rem;
+  height: 13rem;
   margin: 0;
-  width: 20rem;
+  position: relative;
+  width: 13rem;
 }
 .services .service-image img {
   height: 100%;
-  margin: 0;
-  min-height: 12rem;
-  min-width: 13rem;
+  min-height: 14rem;
+  min-width: 15rem;
   object-fit: contain;
+  position: absolute;
   width: 100%;
 }
 .services .service-info {
-  margin: 0;
+  margin: -1rem 2rem 0 3rem;
 }
 .services .service-info h1 {
+  display: inline-block;
   margin: 0;
+}
+.services .service-info h1 span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.services .service-info p {
+  font-size: 0.9em;
+  line-height: 1.6em;
+  padding-right: 0.5rem;
 }
 .services .website-design, .services .video-production, .services .branding {
   flex-direction: row-reverse;
@@ -769,20 +781,31 @@ ul {
 .services .website-design figure {
   background-color: #829191;
 }
+.services .website-design figure img {
+  right: 1rem;
+}
 .services .content-creation figure {
   background-color: #75DDDD;
 }
 .services .video-production figure {
   background-color: #26547C;
+  width: 15rem;
 }
 .services .video-production figure img {
-  margin: 1rem 0;
+  max-height: 11rem;
+  max-width: 11rem;
+  min-height: 0;
+  min-height: 0;
+  top: 1.5rem;
 }
 .services .digital-marketing figure {
   background-color: #EF476F;
 }
 .services .branding figure {
   background-color: #E85517;
+}
+.services .branding figure img {
+  right: 0.2rem;
 }
 
 .our-process {
