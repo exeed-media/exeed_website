@@ -808,6 +808,33 @@ ul {
   right: 0.2rem;
 }
 
+@media screen and (min-width: 55em) {
+  .services .service-info {
+    margin: 0 2rem;
+  }
+  .services .service-info p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+  .services .service-image {
+    border-radius: 50%;
+    height: 23rem;
+    width: 23rem;
+  }
+  .services .website-design figure, .services .video-production figure, .services .branding figure {
+    border-radius: 50%;
+  }
+  .services .video-production figure {
+    width: 23rem;
+  }
+  .services .video-production figure img {
+    max-height: 11rem;
+    max-width: 11rem;
+    min-height: 0;
+    min-height: 0;
+    top: 1.5rem;
+  }
+}
 .our-process {
   display: flex;
   flex-direction: column;
