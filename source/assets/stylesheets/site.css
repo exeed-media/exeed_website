@@ -810,29 +810,40 @@ ul {
 
 @media screen and (min-width: 55em) {
   .services .service-info {
-    margin: 0 2rem;
+    margin: 3rem 5rem 0 7rem;
   }
   .services .service-info p {
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.6em;
   }
   .services .service-image {
     border-radius: 50%;
-    height: 23rem;
-    width: 23rem;
+    height: 28rem;
+    margin-left: 6rem;
+    width: 28rem;
   }
   .services .website-design figure, .services .video-production figure, .services .branding figure {
     border-radius: 50%;
+    margin-left: 0;
+    margin-right: 6rem;
+  }
+  .services .website-design .service-info, .services .video-production .service-info, .services .branding .service-info {
+    margin: 3rem 7rem 0 5rem;
   }
   .services .video-production figure {
-    width: 23rem;
+    height: 28rem;
+    width: 28rem;
   }
   .services .video-production figure img {
-    max-height: 11rem;
-    max-width: 11rem;
-    min-height: 0;
-    min-height: 0;
-    top: 1.5rem;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 22rem;
+    max-width: 22rem;
+    min-height: 10rem;
+    min-height: 11rem;
+    right: 0;
+    top: 0;
   }
 }
 .our-process {
