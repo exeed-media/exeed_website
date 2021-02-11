@@ -936,7 +936,7 @@ section.our-process {
   display: flex;
   flex-direction: column;
   grid-area: whoweare;
-  padding-bottom: 15rem;
+  padding-bottom: 4rem;
 }
 .who-we-are > h1 {
   letter-spacing: 0.05em;
@@ -944,7 +944,7 @@ section.our-process {
   margin: -14rem auto 0 auto;
   z-index: 200;
 }
-.who-we-are > h1 span {
+.who-we-are > h1 .we-turquoise {
   color: #72DDDD;
   letter-spacing: 0.1em;
 }
@@ -978,15 +978,17 @@ section.our-process {
   align-items: center;
   display: flex;
 }
-.who-we-are .team-info .team-member-line {
-  border-top: 2px solid #fff;
-  margin: 0 1rem 0 0;
-  width: 3.4rem;
-}
 .who-we-are .team-info .team-members {
+  align-items: center;
+  display: flex;
   font-size: 0.9em;
   line-height: 2rem;
   margin: 0;
+}
+.who-we-are .team-info .team-members .team-member-line {
+  border-top: 2px solid #fff;
+  margin: 0 1rem 0 0;
+  width: 3.4rem;
 }
 .who-we-are .team-info a {
   align-items: center;
@@ -1014,20 +1016,69 @@ section.our-process {
 }
 
 @media screen and (min-width: 55em) {
-  .philosophy {
-    flex-direction: row;
+  .who-we-are {
+    position: relative;
   }
-  .philosophy p {
-    margin-left: 8rem;
-    margin-right: 5rem;
+  .who-we-are > h1 {
+    border-bottom: 2px solid #fff;
+    font-size: 4em;
+    margin-top: -25rem;
+    padding-right: 12rem;
+    text-align: right;
+    width: 100%;
   }
-
-  .team {
-    flex-direction: row;
+  .who-we-are > h1 .we-turquoise {
+    color: #fff;
   }
-
-  .team-info {
-    margin: 0 7rem;
+  .who-we-are > h1 .are-turquoise {
+    color: #72DDDD;
+  }
+  .who-we-are .philosophy {
+    border: 0;
+    margin-bottom: 0;
+  }
+  .who-we-are .philosophy h1 {
+    margin-left: 5rem;
+  }
+  .who-we-are .philosophy p {
+    margin-left: 25rem;
+    margin-right: 10rem;
+  }
+  .who-we-are img {
+    bottom: 4rem;
+    height: auto;
+    position: absolute;
+    right: 0;
+    width: 19rem;
+  }
+  .who-we-are .our-team {
+    margin-top: 0;
+  }
+  .who-we-are .our-team h1 {
+    align-self: flex-end;
+    border-top: 2px solid #fff;
+    padding-top: 5rem;
+    text-align: right;
+    width: 40%;
+  }
+  .who-we-are .our-team p {
+    margin-left: 7rem;
+    margin-right: 25rem;
+  }
+  .who-we-are .team-info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .who-we-are .team-info .team-members .team-member-line {
+    width: 15rem;
+  }
+  .who-we-are .team-info a {
+    margin-bottom: 3rem;
+    margin-left: 20rem;
+  }
+  .who-we-are .big-idea {
+    display: none;
   }
 }
 .work-with-us {

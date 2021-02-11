@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   grid-area: whoweare;
-  padding-bottom: 15rem;
+  padding-bottom: 4rem;
 
   > h1 {
     letter-spacing: 0.05em;
     font-size: 4.5em;
     margin: -14rem auto 0 auto;
     z-index: 200;
-    span {
+    .we-turquoise {
       color: $exeed-turquoise;
       letter-spacing: 0.1em;
     }
@@ -47,15 +47,18 @@
     align-items: center;
     display: flex;
 
-    .team-member-line {
-      border-top: 2px solid $base-border-color-2;
-      margin: 0 1rem 0 0;
-      width: 3.4rem;
-    }
     .team-members {
+      align-items: center;
+      display: flex;
       font-size: $small-font-size;
       line-height: 2rem;
       margin: 0;
+
+      .team-member-line {
+        border-top: 2px solid $base-border-color-2;
+        margin: 0 1rem 0 0;
+        width: 3.4rem;
+      }
     }
     a {
       align-items: center;
@@ -74,7 +77,7 @@
   .big-idea {
     border-bottom: 2px solid $base-border-color-2;
     border-top: 2px solid $base-border-color-2;
-    font-size: $big-idea-font-size;
+    font-size: $medium-font-size;
     line-height: 6rem;
     margin: 20rem 0;
     padding: 1rem;
@@ -85,20 +88,72 @@
 }
 
 @media screen and (min-width: 55em) {
-  .philosophy {
-    flex-direction: row;
+  .who-we-are {
+    position: relative;
+    > h1 {
+      border-bottom: 2px solid $base-border-color-2;
+      font-size: $medium-font-size;
+      margin-top: -25rem;
+      padding-right: 12rem;
+      text-align: right;
+      width: 100%;
 
-    p {
-      margin-left: 8rem;
-      margin-right: 5rem;
+      .we-turquoise {
+        color: $white;
+      }
+      .are-turquoise {
+        color: $exeed-turquoise;
+      }
     }
-  }
+    .philosophy {
+      border: 0;
+      margin-bottom: 0;
+      h1 {
+        margin-left: 5rem;
+      }
+      p {
+        margin-left: 25rem;
+        margin-right: 10rem;
+      }
+    }
+    img {
+      bottom: 4rem;
+      height: auto;
+      position: absolute;
+      right: 0;
+      width: 19rem;
+    }
+    .our-team {
+      margin-top: 0;
+      h1 {
+        align-self: flex-end;
+        border-top: 2px solid $base-border-color-2;
+        padding-top: 5rem;
+        text-align: right;
+        width: 40%;
+      }
+      p {
+        margin-left: 7rem;
+        margin-right: 25rem;
+      }
+    }
+    .team-info {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column-reverse;
 
-  .team {
-    flex-direction: row;
-  }
-
-  .team-info {
-    margin: 0 7rem;
+      .team-members {
+        .team-member-line {
+          width: 15rem;
+        }
+      }
+      a {
+        margin-bottom: 3rem;
+        margin-left: 20rem;
+      }
+    }
+    .big-idea {
+      display: none;
+    }
   }
 }
