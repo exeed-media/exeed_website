@@ -936,46 +936,70 @@ section.our-process {
   display: flex;
   flex-direction: column;
   grid-area: whoweare;
-  padding: 1rem 0;
+  padding-bottom: 15rem;
 }
 .who-we-are > h1 {
-  border-bottom: 2px solid #FFF;
-  font-size: 1.2em;
-  margin: 0 2rem;
-  padding: 1rem 2rem 0;
-  text-align: right;
-  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  font-size: 4.5em;
+  margin: -14rem auto 0 auto;
+  z-index: 200;
 }
-
-.philosophy {
-  border-bottom: 0.1rem solid #fff;
+.who-we-are > h1 span {
+  color: #72DDDD;
+  letter-spacing: 0.1em;
+}
+.who-we-are .philosophy {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
   display: flex;
   flex-direction: column;
-  margin: auto 2rem;
+  margin: 6rem 4rem;
+  padding: 1rem 0;
 }
-.philosophy h1 {
-  margin-bottom: 0;
-}
-.philosophy p {
+.who-we-are .philosophy h1 {
   font-size: 1.2em;
-  line-height: 1.4;
+  margin: 2rem 0;
 }
-
-.team {
+.who-we-are .philosophy p {
+  font-size: 1.2em;
+  line-height: 2rem;
+}
+.who-we-are .our-team {
+  border-top: 0;
+  margin: 2rem 7rem 0 2rem;
+}
+.who-we-are .our-team h1 {
+  margin: 1rem 0;
+}
+.who-we-are .our-team p {
+  margin: 2rem 3rem;
+}
+.who-we-are .team-info {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
 }
-.team img {
-  width: 100%;
+.who-we-are .team-info .team-member-line {
+  border-top: 2px solid #fff;
+  margin: 0 1rem 0 0;
+  width: 3.4rem;
 }
-
-.team-info {
-  margin-top: 0.5rem;
+.who-we-are .team-info .team-members {
+  font-size: 0.9em;
+  line-height: 2rem;
+  margin: 0;
 }
-.team-info p {
+.who-we-are .team-info a {
+  align-items: center;
+  background-color: #72DDDD;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
   font-size: 1.2em;
-  line-height: 1.4;
+  height: 6.7rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 5rem;
+  width: 6.7rem;
 }
 
 @media screen and (min-width: 55em) {
