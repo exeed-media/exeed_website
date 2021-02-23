@@ -3,13 +3,12 @@
   display: flex;
   flex-direction: column;
   grid-area: workwithus;
-  //min-height: auto;
   .enticement {
     .big-idea {
       border-bottom: 2px solid $base-border-color-2;
       border-top: 2px solid $base-border-color-2;
       color: $workwithus-font-color;
-      font-size: $medium-font-size;
+      font-size: 3.8em;
       line-height: 6rem;
       margin: 30rem 0;
       padding: 1rem;
@@ -17,13 +16,15 @@
         color: $exeed-turquoise;
       }
     }
+    .links {
+      display: none;
+    }
   }
   .work-with-us-form {
     background-color: $workwithus-form-background;
     border-top-left-radius: 3.3rem;
     border-top-right-radius: 3.3rem;
     display: flex;
-    flex: 3;
     flex-direction: column;
     padding: 0 2rem 2.3rem;
 
@@ -59,99 +60,72 @@
       font-size: $subtitle-font-size;
       height: 8rem;
       margin-right: 3rem;
+      outline: none;
       width: 8rem;
     }
   }
-
 }
 
-// .work-with-us-form {
-//   display: flex;
-//   flex: 3;
-//   flex-direction: column;
-//   padding: 0 2rem 2.3rem;
-//
-//   > h1 {
-//     border-bottom: 2px solid rgba(0, 0, 0, .9);
-//     font-size: 1.2em;
-//     padding: 0 2rem;
-//     text-align: right;
-//     text-transform: lowercase;
-//   }
-//
-//   label {
-//     color: rgba(0, 0, 0, .5);
-//     margin-bottom: -1.2rem;
-//   }
-//
-//   input {
-//     border: none;
-//     border-bottom: 1px solid #DDD;
-//     height: 1.5rem;
-//   }
-//
-//   textarea {
-//     border: none;
-//     border-bottom: 1px solid #DDD;
-//     height: 3rem;
-//   }
-// }
-//
-// .submit-button {
-//   background-color: #FFF;
-//   border: none;
-//   border-radius: 60px;
-//   cursor: pointer;
-//   height: 6rem;
-//   width: 6rem;
-//   align-self: flex-end;
-// }
-//
-// .enticement {
-//   background-color: #000000;
-//   display: none;
-//   flex: 2;
-//   flex-direction: column;
-//   margin: 0;
-//   padding: 0 2rem;
-//
-//   > h3 {
-//     color: #FFF;
-//     border-top: 1px solid #FFF;
-//     font-weight: 400;
-//     font-size: 2em;
-//     line-height: 1.4;
-//     padding-top: 1.5rem;
-//
-//     span {
-//       color: #72DDDD;
-//     }
-//   }
-//
-//   .links {
-//     display: flex;
-//     border-bottom: 1px solid #FFF;
-//     justify-content: space-between;
-//     margin: 0 0 2rem;
-//     padding-bottom: 2rem;
-//
-//     > a {
-//       align-self: flex-end;
-//       color: #FFF;
-//     }
-//
-//     ul.social-media {
-//       margin-bottom: 0;
-//       li > a > img {
-//         height: 1.5rem;
-//         width: 1.5rem;
-//       }
-//     }
-//   }
-// }
-
 @media screen and (min-width: 55em) {
-  .enticement {
-    display: flex;
+  .work-with-us {
+    background-color: $base-background-1;
+    flex: 1;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+
+    .enticement {
+      background-color: $base-background-2;
+      border-bottom-right-radius: 3.3rem;
+      border-top-right-radius: 3.3rem;
+      height: 45rem;
+
+      .big-idea {
+        border: 0;
+        font-size: 3em;
+        line-height: 4rem;
+        margin: 2rem 0 0 4rem;
+        span {
+          color: $workwithus-font-color;
+        }
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 0 0 2rem;
+        padding-bottom: 2rem;
+
+        > a {
+          align-self: flex-end;
+          border-bottom: 1px solid $base-border-color-2;
+          color: $workwithus-font-color;
+          margin-bottom: 0;
+          margin-top: 3rem;
+          padding-bottom: 1rem;
+          width: 25rem;
+        }
+        ul.social-media {
+          margin-bottom: 0;
+
+          li > a > img {
+            height: 1.5rem;
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+    .work-with-us-form {
+      border-bottom-left-radius: 3.3rem;
+      border-top-right-radius: 0;
+      margin: 4rem 0 0 0;
+      width: 50rem;
+      input {
+        margin: 0 0 6rem 2rem;
+      }
+      textarea {
+        margin: 0 0 3rem 2rem;
+      }
+    }
   }
 }

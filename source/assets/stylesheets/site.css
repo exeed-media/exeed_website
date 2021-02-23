@@ -1108,7 +1108,7 @@ section.our-process {
   height: 10rem;
   margin: 1rem 1rem 0 0;
   position: relative;
-  width: 16rem;
+  width: 14rem;
 }
 .our-work .projects > div > img {
   height: 100%;
@@ -1157,7 +1157,7 @@ section.our-process {
   border-bottom: 2px solid #fff;
   border-top: 2px solid #fff;
   color: #fff;
-  font-size: 4em;
+  font-size: 3.8em;
   line-height: 6rem;
   margin: 30rem 0;
   padding: 1rem;
@@ -1165,12 +1165,14 @@ section.our-process {
 .work-with-us .enticement .big-idea span {
   color: #72DDDD;
 }
+.work-with-us .enticement .links {
+  display: none;
+}
 .work-with-us .work-with-us-form {
   background-color: #F7F7F7;
   border-top-left-radius: 3.3rem;
   border-top-right-radius: 3.3rem;
   display: flex;
-  flex: 3;
   flex-direction: column;
   padding: 0 2rem 2.3rem;
 }
@@ -1206,12 +1208,67 @@ section.our-process {
   font-size: 1.5em;
   height: 8rem;
   margin-right: 3rem;
+  outline: none;
   width: 8rem;
 }
 
 @media screen and (min-width: 55em) {
-  .enticement {
+  .work-with-us {
+    background-color: #fff;
+    flex: 1;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .work-with-us .enticement {
+    background-color: #1E1F21;
+    border-bottom-right-radius: 3.3rem;
+    border-top-right-radius: 3.3rem;
+    height: 45rem;
+  }
+  .work-with-us .enticement .big-idea {
+    border: 0;
+    font-size: 3em;
+    line-height: 4rem;
+    margin: 2rem 0 0 4rem;
+  }
+  .work-with-us .enticement .big-idea span {
+    color: #fff;
+  }
+  .work-with-us .enticement .links {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 2rem;
+    padding-bottom: 2rem;
+  }
+  .work-with-us .enticement .links > a {
+    align-self: flex-end;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    width: 25rem;
+  }
+  .work-with-us .enticement .links ul.social-media {
+    margin-bottom: 0;
+  }
+  .work-with-us .enticement .links ul.social-media li > a > img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .work-with-us .work-with-us-form {
+    border-bottom-left-radius: 3.3rem;
+    border-top-right-radius: 0;
+    margin: 4rem 0 0 0;
+    width: 50rem;
+  }
+  .work-with-us .work-with-us-form input {
+    margin: 0 0 6rem 2rem;
+  }
+  .work-with-us .work-with-us-form textarea {
+    margin: 0 0 3rem 2rem;
   }
 }
 .footer {
