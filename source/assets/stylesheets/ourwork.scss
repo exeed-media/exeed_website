@@ -1,0 +1,79 @@
+.our-work {
+  grid-area: ourwork;
+  h1 {
+    border-bottom: 2px solid $base-border-color-1;
+    border-top: 2px solid $base-border-color-1;
+    font-size: $ourwork-title-size;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: 6rem;
+    padding: 1.5rem 0;
+    span {
+      color: $exeed-turquoise;
+    }
+  }
+  > a {
+    align-items: center;
+    background-color: $exeed-turquoise;
+    border-radius: 50%;
+    display: flex;
+    float: right;
+    font-size: $subtitle-font-size;
+    height: 12rem;
+    justify-content: center;
+    margin: -3.5rem 5.4rem 0 0;
+    width: 12rem;
+  }
+  .projects {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 12rem 0;
+    width: 100%;
+
+    > div {
+      height: 10rem;
+      margin: 1rem 1rem 0 0;
+      position: relative;
+      width: 16rem;
+      > img {
+        height: 100%;
+        width: 100%;
+      }
+      div {
+        align-items: center;
+        background-color: rgba(0, 0, 0, .4);
+        bottom: 0;
+        color: $ourwork-font-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        h2 {
+          font-size: 1.7em;
+          margin: 1rem 0 0 0;
+        }
+        a {
+          align-items: center;
+          color: $ourwork-font-color;
+          display: flex;
+          margin: 0;
+          img {
+            margin: 0;
+            max-width: 2.5rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .exeed {
+      width: 25rem;
+    }
+  }
+}

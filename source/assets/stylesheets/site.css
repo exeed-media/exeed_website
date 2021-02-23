@@ -429,7 +429,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fit, min-max(700px, 100vh));
-  grid-template-areas: "landing" "services" "process" "whoweare" "workwithus" "footer";
+  grid-template-areas: "landing" "services" "process" "whoweare" "ourwork" "workwithus" "footer";
 }
 
 .header {
@@ -1081,6 +1081,85 @@ section.our-process {
     display: none;
   }
 }
+.our-work {
+  grid-area: ourwork;
+}
+.our-work h1 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+  border-top: 2px solid rgba(0, 0, 0, 0.9);
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-left: 3rem;
+  margin-right: 6rem;
+  padding: 1.5rem 0;
+}
+.our-work h1 span {
+  color: #72DDDD;
+}
+.our-work > a {
+  align-items: center;
+  background-color: #72DDDD;
+  border-radius: 50%;
+  display: flex;
+  float: right;
+  font-size: 1.5em;
+  height: 12rem;
+  justify-content: center;
+  margin: -3.5rem 5.4rem 0 0;
+  width: 12rem;
+}
+.our-work .projects {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin: 12rem 0;
+  width: 100%;
+}
+.our-work .projects > div {
+  height: 10rem;
+  margin: 1rem 1rem 0 0;
+  position: relative;
+  width: 16rem;
+}
+.our-work .projects > div > img {
+  height: 100%;
+  width: 100%;
+}
+.our-work .projects > div div {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.our-work .projects > div div h2 {
+  font-size: 1.7em;
+  margin: 1rem 0 0 0;
+}
+.our-work .projects > div div a {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  margin: 0;
+}
+.our-work .projects > div div a img {
+  margin: 0;
+  max-width: 2.5rem;
+  width: 100%;
+}
+.our-work .projects .exeed {
+  width: 25rem;
+}
+
 .work-with-us {
   display: flex;
   flex-direction: row;
