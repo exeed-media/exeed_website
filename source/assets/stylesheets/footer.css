@@ -1,66 +1,17 @@
-.footer {
-  padding: 4rem 2.5rem 0;
-  background-color: #1E1F21;
-  grid-area: footer;
-  margin-bottom: -2rem;
-}
-.footer h2 {
-  color: #FFF;
-  font-size: 4em;
-  margin-top: 1rem;
-}
-.footer h2 strong {
-  color: #72DDDD;
+/* Error: Undefined variable.
+ *   ,
+ * 3 |   background-color: $base-background-2;
+ *   |                     ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   stylesheets/footer.scss 3:21  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  font-weight: 400;
-  line-height: 1.6;
-  margin-top: 0;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502    background-color: $base-background-2;\a   \2502                      ^^^^^^^^^^^^^^^^^^\a   \2575 \a   stylesheets/footer.scss 3:21  root stylesheet";
 }
-.footer ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-.footer ul a {
-  color: #FFF;
-  font-size: 1.7em;
-  font-weight: 400;
-}
-.footer ul ul.social-media {
-  margin-top: 0.5rem;
-}
-.footer ul ul.social-media li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-.footer ul ul.social-media li img {
-  height: 2rem;
-  width: 2rem;
-}
-.footer p {
-  border-top: 0.1rem solid #fff;
-  color: #FFF;
-  font-size: 1.2em;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  text-align: center;
-}
-
-@media screen and (min-width: 55em) {
-  .content {
-    display: flex;
-  }
-
-  .footer {
-    padding: 4rem 4rem 0;
-  }
-  .footer h2 {
-    flex: 1;
-  }
-  .footer ul {
-    flex: 1;
-    justify-content: flex-end;
-    margin-top: 4rem;
-  }
-}
-
-/*# sourceMappingURL=footer.css.map */

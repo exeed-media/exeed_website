@@ -1272,46 +1272,69 @@ section.our-process {
   }
 }
 .footer {
-  padding: 4rem 2.5rem 0;
+  padding: 4rem 0 0;
   background-color: #1E1F21;
   grid-area: footer;
-  margin-bottom: -2rem;
 }
-.footer h2 {
-  color: #FFF;
-  font-size: 4em;
-  margin-top: 1rem;
+.footer .content-menu {
+  display: flex;
+  justify-content: space-between;
 }
-.footer h2 strong {
-  color: #72DDDD;
-  display: block;
-  font-weight: 400;
-  line-height: 1.6;
-  margin-top: 0;
-}
-.footer ul {
+.footer .content-menu ul {
   list-style-type: none;
+  margin-left: 2.5rem;
   padding-left: 0;
 }
-.footer ul a {
-  color: #FFF;
-  font-size: 1.7em;
+.footer .content-menu ul a {
+  color: #fff;
+  font-size: 2em;
   font-weight: 400;
+  margin-bottom: 2rem;
 }
-.footer ul ul.social-media {
+.footer .content-menu > div {
+  align-items: center;
+  background-color: #72DDDD;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5em;
+  height: 10rem;
+  justify-content: center;
+  margin-right: 2.5rem;
+  width: 10rem;
+}
+.footer ul.social-media {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
   margin-top: 0.5rem;
 }
-.footer ul ul.social-media li {
+.footer ul.social-media li {
   display: inline-block;
-  margin-right: 1rem;
+  margin: 0;
 }
-.footer ul ul.social-media li img {
+.footer ul.social-media li img {
   height: 2rem;
   width: 2rem;
 }
+.footer ul.social-media .footer-social-line {
+  border-top: 2px solid #fff;
+  margin: 0;
+  width: 10rem;
+}
+.footer h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 5rem 1rem 0 2.5rem;
+}
+.footer h2 strong {
+  color: #72DDDD;
+}
 .footer p {
   border-top: 0.1rem solid #fff;
-  color: #FFF;
+  color: #fff;
   font-size: 1.2em;
   margin-top: 3rem;
   padding-top: 1.5rem;
