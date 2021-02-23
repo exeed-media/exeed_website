@@ -1,90 +1,17 @@
-.work-with-us {
-  display: flex;
-  flex-direction: row;
-  grid-area: workwithus;
-  min-height: auto;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |   background-color: $base-background-2;
+ *   |                     ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   stylesheets/workwithus.scss 2:21  root stylesheet */
 
-.work-with-us-form {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-  padding: 0 2rem 2.3rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    background-color: $base-background-2;\a   \2502                      ^^^^^^^^^^^^^^^^^^\a   \2575 \a   stylesheets/workwithus.scss 2:21  root stylesheet";
 }
-.work-with-us-form > h1 {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.9);
-  font-size: 1.2em;
-  padding: 0 2rem;
-  text-align: right;
-  text-transform: lowercase;
-}
-.work-with-us-form label {
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: -1.2rem;
-}
-.work-with-us-form input {
-  border: none;
-  border-bottom: 1px solid #DDD;
-  height: 1.5rem;
-}
-.work-with-us-form textarea {
-  border: none;
-  border-bottom: 1px solid #DDD;
-  height: 3rem;
-}
-
-.submit-button {
-  background-color: #FFF;
-  border: none;
-  border-radius: 60px;
-  cursor: pointer;
-  height: 6rem;
-  width: 6rem;
-  align-self: flex-end;
-}
-
-.enticement {
-  background-color: #000000;
-  display: none;
-  flex: 2;
-  flex-direction: column;
-  margin: 0;
-  padding: 0 2rem;
-}
-.enticement > h3 {
-  color: #FFF;
-  border-top: 1px solid #FFF;
-  font-weight: 400;
-  font-size: 2em;
-  line-height: 1.4;
-  padding-top: 1.5rem;
-}
-.enticement > h3 span {
-  color: #72DDDD;
-}
-.enticement .links {
-  display: flex;
-  border-bottom: 1px solid #FFF;
-  justify-content: space-between;
-  margin: 0 0 2rem;
-  padding-bottom: 2rem;
-}
-.enticement .links > a {
-  align-self: flex-end;
-  color: #FFF;
-}
-.enticement .links ul.social-media {
-  margin-bottom: 0;
-}
-.enticement .links ul.social-media li > a > img {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-@media screen and (min-width: 55em) {
-  .enticement {
-    display: flex;
-  }
-}
-
-/*# sourceMappingURL=workwithus.css.map */

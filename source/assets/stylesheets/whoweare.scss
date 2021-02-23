@@ -74,17 +74,6 @@
       width: 6.7rem;
     }
   }
-  .big-idea {
-    border-bottom: 2px solid $base-border-color-2;
-    border-top: 2px solid $base-border-color-2;
-    font-size: $medium-font-size;
-    line-height: 6rem;
-    margin: 20rem 0;
-    padding: 1rem;
-    span {
-      color: $exeed-turquoise;
-    }
-  }
 }
 
 @media screen and (min-width: 55em) {
@@ -151,9 +140,6 @@
         margin-bottom: 3rem;
         margin-left: 20rem;
       }
-    }
-    .big-idea {
-      display: none;
     }
   }
 }

@@ -1003,17 +1003,6 @@ section.our-process {
   margin-right: 5rem;
   width: 6.7rem;
 }
-.who-we-are .big-idea {
-  border-bottom: 2px solid #fff;
-  border-top: 2px solid #fff;
-  font-size: 4em;
-  line-height: 6rem;
-  margin: 20rem 0;
-  padding: 1rem;
-}
-.who-we-are .big-idea span {
-  color: #72DDDD;
-}
 
 @media screen and (min-width: 55em) {
   .who-we-are {
@@ -1077,9 +1066,6 @@ section.our-process {
     margin-bottom: 3rem;
     margin-left: 20rem;
   }
-  .who-we-are .big-idea {
-    display: none;
-  }
 }
 .our-work {
   grid-area: ourwork;
@@ -1118,6 +1104,7 @@ section.our-process {
   width: 100%;
 }
 .our-work .projects > div {
+  cursor: pointer;
   height: 10rem;
   margin: 1rem 1rem 0 0;
   position: relative;
@@ -1161,86 +1148,65 @@ section.our-process {
 }
 
 .work-with-us {
+  background-color: #1E1F21;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   grid-area: workwithus;
-  min-height: auto;
 }
-
-.work-with-us-form {
+.work-with-us .enticement .big-idea {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+  color: #fff;
+  font-size: 4em;
+  line-height: 6rem;
+  margin: 30rem 0;
+  padding: 1rem;
+}
+.work-with-us .enticement .big-idea span {
+  color: #72DDDD;
+}
+.work-with-us .work-with-us-form {
+  background-color: #F7F7F7;
+  border-top-left-radius: 3.3rem;
+  border-top-right-radius: 3.3rem;
   display: flex;
   flex: 3;
   flex-direction: column;
   padding: 0 2rem 2.3rem;
 }
-.work-with-us-form > h1 {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+.work-with-us .work-with-us-form > h1 {
+  font-size: 1.5em;
+  margin: 5rem auto 8rem auto;
+}
+.work-with-us .work-with-us-form input {
+  background-color: #F7F7F7;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
   font-size: 1.2em;
-  padding: 0 2rem;
-  text-align: right;
-  text-transform: lowercase;
+  margin: 0 5rem 6rem 3rem;
+  outline: none;
+  padding-bottom: 0.7rem;
 }
-.work-with-us-form label {
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: -1.2rem;
-}
-.work-with-us-form input {
+.work-with-us .work-with-us-form textarea {
+  background-color: #F7F7F7;
   border: none;
-  border-bottom: 1px solid #DDD;
-  height: 1.5rem;
-}
-.work-with-us-form textarea {
-  border: none;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  font-size: 1.2em;
   height: 3rem;
+  margin: 0 5rem 3rem 3rem;
+  outline: none;
 }
-
-.submit-button {
-  background-color: #FFF;
+.work-with-us .work-with-us-form .submit-button {
+  align-self: flex-end;
+  background-color: #72DDDD;
   border: none;
-  border-radius: 60px;
+  border-radius: 50%;
+  color: #fff;
   cursor: pointer;
-  height: 6rem;
-  width: 6rem;
-  align-self: flex-end;
-}
-
-.enticement {
-  background-color: #000000;
-  display: none;
-  flex: 2;
-  flex-direction: column;
-  margin: 0;
-  padding: 0 2rem;
-}
-.enticement > h3 {
-  color: #FFF;
-  border-top: 1px solid #FFF;
-  font-weight: 400;
-  font-size: 2em;
-  line-height: 1.4;
-  padding-top: 1.5rem;
-}
-.enticement > h3 span {
-  color: #72DDDD;
-}
-.enticement .links {
-  display: flex;
-  border-bottom: 1px solid #FFF;
-  justify-content: space-between;
-  margin: 0 0 2rem;
-  padding-bottom: 2rem;
-}
-.enticement .links > a {
-  align-self: flex-end;
-  color: #FFF;
-}
-.enticement .links ul.social-media {
-  margin-bottom: 0;
-}
-.enticement .links ul.social-media li > a > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  font-size: 1.5em;
+  height: 8rem;
+  margin-right: 3rem;
+  width: 8rem;
 }
 
 @media screen and (min-width: 55em) {
