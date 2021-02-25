@@ -1,0 +1,70 @@
+.container {
+  //overflow-x: hidden;
+}
+.landing {
+  .spheres {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .sphere {
+      background-color: $exeed-turquoise;
+      border-radius: 50%;
+      height: 6rem;
+      position: sticky;
+      width: 6rem;
+      z-index: -100;
+    }
+    .sphere:nth-child(1) {
+      background-color: rgba(117, 221, 221, 0.3);
+      height: 12rem;
+      //margin-right: -25rem;
+      right: 0rem;
+      top: 19rem;
+      //float: right;
+      //margin-right: -22rem;
+      //margin-top: -8rem;
+      width: 12rem;
+    }
+    .sphere:nth-child(2) {
+      background-color: rgba(117, 221, 221, 0.3);
+      //left: -2rem;
+      top: 15%;
+    }
+  }
+}
+.services {
+  position: relative;
+  .spheres {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .sphere {
+      background-color: red;
+      border-radius: 50%;
+      height: 6rem;
+      position: sticky;
+      width: 6rem;
+      z-index: -100;
+    }
+    .sphere:nth-child(1) {
+      background-color: red;
+      height: 4rem;
+      float: left;
+      margin: 3rem;
+      // right: 0;
+      // top: 0;
+      width: 4rem;
+    }
+    .sphere:nth-child(2) {
+      background-color: pink;
+      left: -2rem;
+      top: 25%;
+    }
+  }
+}
