@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    cursor: pointer;
+    margin: 4.5rem;
+  }
+}
+section {
+  min-height: 0;
+}
+.exeed-paragraph {
+  margin-left: 3rem;
+  > img {
+    height: auto;
+    width: 15rem;
+  }
+  p {
+    font-size: $small-font-size;
+    letter-spacing: 0.07em;
+    line-height: 1.6em;
+    margin-bottom: .3rem;
+    padding: 1.5rem 0;
+    width: 15rem;
+  }
+  span {
+    font-size: $small-font-size;
+  }
+  h2 {
+    color: $exeed-turquoise;
+    font-size: $title-font-size;
+    letter-spacing: 0.07em;
+    margin: 3rem .5rem;
+  }
+}
+.exeed-concept {
+  p {
+    border-bottom: 1px solid $black;
+    border-top: 1px solid $black;
+  }
+}
+.exeed-mobile {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 12rem;
+  img {
+    &:last-child {
+      left: 1rem;
+      margin: 0;
+      position: absolute;
+      top: .8rem;
+    }
+  }
+}
+.second-concept {
+  align-items: center;
+  border-top: 1px solid $black;
+  display: flex;
+  margin-right: 3rem;
+  p {
+    margin: 1.5rem;
+    padding: 0;
+  }
+  > div {
+    border-top: 2px solid $exeed-turquoise;
+    margin: 0;
+    width: 6rem;
+  }
+  .exeed-line {
+    margin-left: -2rem;
+  }
+  .exeed-second-line {
+    margin-right: -2rem;
+  }
+}
+.branding {
+  background-color: $exeed-turquoise;
+  text-align: center;
+  margin: 5rem 0 0 0;
+  padding: 0;
+  .exeed-monitor {
+    text-align: center;
+    img {
+      height: auto;
+      margin-top: -4rem;
+      width: 20rem;
+    }
+  }
+  h2 {
+    font-size: $title-font-size;
+    letter-spacing: 0.07em;
+    //padding-bottom: -5rem;
+    text-align: left;
+    > div {
+      display: none;
+    }
+  }
+}

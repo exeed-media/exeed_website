@@ -557,6 +557,7 @@ ul {
 }
 .landing {
   grid-area: landing;
+  position: relative;
   text-align: center;
 }
 .landing h1 {
@@ -1391,6 +1392,63 @@ section.our-process {
     border: 0;
     margin: 0 0 2rem 0;
   }
+}
+.landing .spheres {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.landing .spheres .sphere {
+  background-color: #72DDDD;
+  border-radius: 50%;
+  height: 6rem;
+  position: sticky;
+  width: 6rem;
+  z-index: -100;
+}
+.landing .spheres .sphere:nth-child(1) {
+  background-color: rgba(117, 221, 221, 0.3);
+  height: 12rem;
+  right: 0rem;
+  top: 19rem;
+  width: 12rem;
+}
+.landing .spheres .sphere:nth-child(2) {
+  background-color: rgba(117, 221, 221, 0.3);
+  top: 15%;
+}
+
+.services {
+  position: relative;
+}
+.services .spheres {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.services .spheres .sphere {
+  background-color: red;
+  border-radius: 50%;
+  height: 6rem;
+  position: sticky;
+  width: 6rem;
+  z-index: -100;
+}
+.services .spheres .sphere:nth-child(1) {
+  background-color: red;
+  height: 4rem;
+  float: left;
+  margin: 3rem;
+  width: 4rem;
+}
+.services .spheres .sphere:nth-child(2) {
+  background-color: pink;
+  left: -2rem;
+  top: 25%;
 }
 
 /*# sourceMappingURL=site.css.map */
