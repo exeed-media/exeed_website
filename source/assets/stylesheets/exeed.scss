@@ -1,3 +1,6 @@
+html {
+  line-height: normal;
+}
 header {
   display: flex;
   justify-content: flex-end;
@@ -8,6 +11,10 @@ header {
 }
 section {
   min-height: 0;
+}
+.first-concept {
+  display: flex;
+  justify-content: center;
 }
 .exeed-paragraph {
   margin-left: 3rem;
@@ -41,16 +48,11 @@ section {
 }
 .exeed-mobile {
   margin: 0;
-  position: absolute;
-  right: 0;
-  top: 12rem;
+  padding: 0;
   img {
-    &:last-child {
-      left: 1rem;
-      margin: 0;
-      position: absolute;
-      top: .8rem;
-    }
+    height: auto;
+    margin: 0;
+    width: 13rem;
   }
 }
 .second-concept {
@@ -107,11 +109,9 @@ section {
   overflow: hidden;
   position: relative;
   .exeed-desktop {
-    border: 1.5rem solid $black;
-    border-radius: 1rem;
-    margin-left: 4rem;
+    height: auto;
     position: absolute;
-    right: -1.5rem;
+    right: 0;
     img {
       width: 15rem;
     }
@@ -187,6 +187,7 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
     > img {
       height: 7rem;
       margin: 0;
@@ -221,5 +222,20 @@ section {
         width: 7rem;
       }
     }
+  }
+}
+footer.footer {
+  flex-direction: column;
+  padding: 0;
+  > p {
+    margin: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h2 {
+    border-bottom: 1px solid $base-border-color-2;
+    font-size: 2.8em;
   }
 }

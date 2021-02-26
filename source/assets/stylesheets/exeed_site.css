@@ -432,6 +432,10 @@ ul {
   grid-template-areas: "landing" "services" "process" "whoweare" "ourwork" "workwithus" "footer";
 }
 
+html {
+  line-height: normal;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
@@ -443,6 +447,11 @@ header img {
 
 section {
   min-height: 0;
+}
+
+.first-concept {
+  display: flex;
+  justify-content: center;
 }
 
 .exeed-paragraph {
@@ -477,15 +486,12 @@ section {
 
 .exeed-mobile {
   margin: 0;
-  position: absolute;
-  right: 0;
-  top: 12rem;
+  padding: 0;
 }
-.exeed-mobile img:last-child {
-  left: 1rem;
+.exeed-mobile img {
+  height: auto;
   margin: 0;
-  position: absolute;
-  top: 0.8rem;
+  width: 13rem;
 }
 
 .second-concept {
@@ -545,11 +551,9 @@ section {
   position: relative;
 }
 .exeed-colors .exeed-desktop {
-  border: 1.5rem solid rgba(0, 0, 0, 0.9);
-  border-radius: 1rem;
-  margin-left: 4rem;
+  height: auto;
   position: absolute;
-  right: -1.5rem;
+  right: 0;
 }
 .exeed-colors .exeed-desktop img {
   width: 15rem;
@@ -626,6 +630,7 @@ section {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 .typography .poppins > img {
   height: 7rem;
@@ -660,6 +665,144 @@ section {
   left: 5rem;
   top: 8rem;
   width: 7rem;
+}
+
+footer.footer {
+  flex-direction: column;
+  padding: 0;
+}
+footer.footer > p {
+  margin: 0;
+}
+footer.footer .content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer.footer h2 {
+  border-bottom: 1px solid #fff;
+  font-size: 2.8em;
+}
+
+.footer {
+  padding: 4rem 0 0;
+  background-color: #1E1F21;
+  grid-area: footer;
+}
+.footer .content-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .content-menu ul {
+  list-style-type: none;
+  margin-left: 2.5rem;
+  padding-left: 0;
+}
+.footer .content-menu ul a {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.footer .content-menu > div {
+  align-items: center;
+  background-color: #72DDDD;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5em;
+  height: 10rem;
+  justify-content: center;
+  margin-right: 2.5rem;
+  width: 10rem;
+}
+.footer ul.social-media {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+.footer ul.social-media li {
+  display: inline-block;
+  margin: 0;
+}
+.footer ul.social-media li img {
+  height: 2rem;
+  width: 2rem;
+}
+.footer ul.social-media .footer-social-line {
+  border-top: 2px solid #fff;
+  margin: 0;
+  width: 10rem;
+}
+.footer h2 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 5rem 1rem 0 2.5rem;
+}
+.footer h2 strong {
+  color: #72DDDD;
+}
+.footer p {
+  border-top: 0.1rem solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 55em) {
+  .footer .footer-top-line {
+    border-top: 1px solid #fff;
+    margin: 0 2rem 3rem 20rem;
+  }
+  .footer .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 3rem;
+  }
+  .footer .content .content-menu ul {
+    margin: 3rem 0;
+  }
+  .footer .content .content-menu ul a {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+  }
+  .footer .content .content-menu .lets-talk {
+    display: none;
+  }
+  .footer .content ul.social-media {
+    justify-content: flex-start;
+    margin: 0;
+    margin-top: -2rem;
+  }
+  .footer .content ul.social-media .footer-social-line {
+    display: none;
+  }
+  .footer .content ul.social-media img {
+    height: 1.5rem;
+    margin-right: 1rem;
+    width: 1.5rem;
+  }
+  .footer .content > h2 {
+    font-size: 4em;
+    margin: 0;
+  }
+  .footer .content > h2 strong {
+    display: block;
+    margin: 0;
+  }
+  .footer .footer-bottom-line {
+    border-top: 1px solid #fff;
+    margin: 4rem 20rem 0rem 2rem;
+  }
+  .footer p {
+    border: 0;
+    margin: 0 0 2rem 0;
+  }
 }
 
 /*# sourceMappingURL=exeed_site.css.map */
