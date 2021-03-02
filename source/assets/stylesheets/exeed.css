@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 26 |     font-size: $small-font-size;
- *    |                ^^^^^^^^^^^^^^^^
+ * 14 |   background-color: $exeed-turquoise;
+ *    |                     ^^^^^^^^^^^^^^^^
  *    '
- *   stylesheets/exeed.scss 26:16  root stylesheet */
+ *   stylesheets/exeed.scss 14:21  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 26 \2502      font-size: $small-font-size;\a    \2502                 ^^^^^^^^^^^^^^^^\a    \2575 \a   stylesheets/exeed.scss 26:16  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502    background-color: $exeed-turquoise;\a    \2502                      ^^^^^^^^^^^^^^^^\a    \2575 \a   stylesheets/exeed.scss 14:21  root stylesheet";
 }

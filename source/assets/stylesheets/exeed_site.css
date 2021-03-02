@@ -434,6 +434,7 @@ ul {
 
 html {
   line-height: normal;
+  overflow-x: hidden;
 }
 
 header {
@@ -445,13 +446,23 @@ header img {
   margin: 4.5rem;
 }
 
+.first-sphere {
+  background-color: #72DDDD;
+  border-radius: 50%;
+  height: 8rem;
+  left: -4rem;
+  margin: 0;
+  position: absolute;
+  top: 6rem;
+  width: 8rem;
+}
+
 section {
   min-height: 0;
 }
 
 .first-concept {
   display: flex;
-  justify-content: center;
 }
 
 .exeed-paragraph {
@@ -459,7 +470,9 @@ section {
 }
 .exeed-paragraph > img {
   height: auto;
-  width: 15rem;
+  margin-left: 1rem;
+  max-width: 20rem;
+  width: 100%;
 }
 .exeed-paragraph p {
   font-size: 0.9em;
@@ -476,7 +489,7 @@ section {
   color: #72DDDD;
   font-size: 5em;
   letter-spacing: 0.07em;
-  margin: 3rem 0.5rem;
+  margin: 2rem 0.5rem;
 }
 
 .exeed-concept p {
@@ -491,13 +504,16 @@ section {
 .exeed-mobile img {
   height: auto;
   margin: 0;
-  width: 13rem;
+  margin-top: 2rem;
+  max-width: 15rem;
+  width: 100%;
 }
 
 .second-concept {
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.9);
   display: flex;
+  justify-content: center;
   margin-right: 3rem;
 }
 .second-concept p {
@@ -556,11 +572,15 @@ section {
   right: 0;
 }
 .exeed-colors .exeed-desktop img {
-  width: 15rem;
+  height: auto;
+  max-width: 16rem;
+  width: 100%;
 }
 .exeed-colors img.x-logo {
+  height: auto;
   margin-top: 20rem;
-  width: 15rem;
+  max-width: 16rem;
+  width: 100%;
 }
 .exeed-colors .color-palette {
   display: flex;
@@ -572,7 +592,7 @@ section {
   font-size: 6em;
   left: -13.5rem;
   letter-spacing: 0.1em;
-  margin-top: 14rem;
+  margin-top: 10rem;
   padding: 0 4rem;
   position: absolute;
   transform: rotate(90deg);
@@ -644,7 +664,11 @@ section {
   margin-left: -5rem;
 }
 .typography .spheres {
+  align-items: center;
   bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
   left: 0;
   position: absolute;
   right: 0;
@@ -655,15 +679,11 @@ section {
   background-color: #72DDDD;
   border-radius: 50%;
   height: 17rem;
-  position: absolute;
-  right: 0;
-  top: 3rem;
   width: 17rem;
 }
 .typography .spheres > div:last-child {
   height: 7rem;
-  left: 5rem;
-  top: 8rem;
+  margin-right: 2rem;
   width: 7rem;
 }
 
@@ -681,8 +701,66 @@ footer.footer .content {
 footer.footer h2 {
   border-bottom: 1px solid #fff;
   font-size: 2.8em;
+  margin-bottom: 3.5rem;
 }
 
+@media screen and (min-width: 55em) {
+  .exeed-paragraph {
+    margin-left: 5rem;
+  }
+  .exeed-paragraph > img {
+    max-width: 30rem;
+  }
+  .exeed-paragraph p {
+    max-width: 30rem;
+    width: 100%;
+  }
+  .exeed-paragraph h2 {
+    font-size: 10em;
+  }
+
+  .exeed-mobile {
+    overflow-x: hidden;
+  }
+  .exeed-mobile img {
+    margin-left: 2rem;
+    margin-top: 0;
+    max-width: 18rem;
+    width: 100%;
+  }
+
+  .branding h2 {
+    font-size: 6em;
+    line-height: 4.5rem;
+  }
+  .branding h2 > div {
+    max-width: 20rem;
+    width: 100%;
+  }
+
+  .exeed-colors .exeed-desktop img {
+    max-width: 20rem;
+  }
+  .exeed-colors img.x-logo {
+    max-width: 25rem;
+  }
+  .exeed-colors .color-palette > h2 {
+    display: block;
+    left: -3rem;
+    margin-top: 10rem;
+  }
+  .exeed-colors .color-palette .colors {
+    margin-left: 0;
+    margin-right: 8rem;
+  }
+
+  footer.footer {
+    padding-top: 2rem;
+  }
+  footer.footer .content {
+    flex-direction: row-reverse;
+  }
+}
 .footer {
   padding: 4rem 0 0;
   background-color: #1E1F21;
