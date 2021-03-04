@@ -1,0 +1,147 @@
+body {
+  section {
+    min-height: 0;
+  }
+  > header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 3rem 0 3rem ;
+    img {
+      cursor: pointer;
+      height: auto;
+      margin: 0;
+      max-width: 2rem;
+      width: 100%;
+      &:first-child {
+        max-width: 8rem;
+      }
+    }
+  }
+}
+.first-sphere {
+  background-color: $exeed-turquoise;
+  border-radius: 50%;
+  height: 9rem;
+  left: -3rem;
+  margin: 0;
+  position: absolute;
+  width: 9rem;
+}
+.solidkraft-concept {
+  display: flex;
+  margin-top: 2rem;
+  .concept {
+    letter-spacing: 0.07em;
+    line-height: 1.5em;
+    margin: 6.5rem 1rem 4rem 4rem;
+    p {
+      border-bottom: 1px solid $black;
+      border-top: 1px solid $black;
+      font-size: $small-font-size;
+      padding: 1.5rem 0;
+      margin: 0;
+    }
+    > span {
+      font-size: .7em;
+    }
+    h2 {
+      font-size: 5.5em;
+      letter-spacing: 0.07em;
+      margin: 4rem 0 0 0;
+      text-align: center;
+      > span {
+        color: $exeed-turquoise;
+      }
+    }
+  }
+  .solidkraft-screen {
+    position: relative;
+    > img {
+      filter: brightness(75%);
+    }
+    > div {
+      align-items: center;
+      background-color: $exeed-turquoise;
+      border-radius: 50%;
+      bottom: 0;
+      cursor: pointer;
+      display: flex;
+      height: 5.5rem;
+      justify-content: center;
+      left: -2.5rem;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      width: 5.5rem;
+      img {
+        width: auto;
+      }
+    }
+  }
+}
+.second-concept {
+  align-items: center;
+  border-top: 1px solid $black;
+  display: flex;
+  margin: 1rem 1rem 5rem 4rem;
+  padding-top: 2rem;
+  > div {
+    border-top: 5px solid $exeed-turquoise;
+    margin: 0;
+    margin-right: 1rem;
+    width: 50rem;
+  }
+  > p {
+    font-size: .8em;
+    line-height: 1.4em;
+    letter-spacing: 0.07em;
+    margin: 0;
+  }
+}
+.branding-monitor {
+  background-color: $base-background-2;
+  position: relative;
+  img {
+    height: auto;
+    margin: 2rem 0;
+    max-width: 22rem;
+    width: 100%;
+  }
+  h2 {
+    border-bottom: 2px solid $base-border-color-2;
+    color: $exeed-turquoise;
+    font-size: $title-font-size;
+    letter-spacing: 0.07em;
+    padding: 0 3rem;
+    position: absolute;
+    right: -5rem;
+    top: 6rem;
+    transform: rotate(90deg);
+    width: 18rem;
+  }
+}
+.white-monitor {
+  margin-top: 14rem;
+  position: relative;
+  text-align: center;
+  > img {
+    height: auto;
+    max-width: 22rem;
+    width: 100%;
+  }
+  > a {
+    align-items: center;
+    background-color: $exeed-turquoise;
+    border-radius: 50%;
+    bottom: -4rem;
+    color: $link-color;
+    display: flex;
+    font-size: .7em;
+    height: 8.5rem;
+    justify-content: center;
+    position: absolute;
+    right: 4rem;
+    width: 8.5rem;
+  }
+}
