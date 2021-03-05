@@ -145,3 +145,169 @@ body {
     width: 8.5rem;
   }
 }
+.color-palette {
+  > h3 {
+    border-bottom: 1px solid $black;
+    font-size: $small-font-size;
+    font-weight: $sans-serif-regular;
+    letter-spacing: 0.07em;
+    margin: 10rem 2rem 3rem 2rem;
+    padding: .2rem .5rem;
+    text-align: right;
+  }
+  .colors {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    .color {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: $small-font-size;
+      > div {
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+        height: 4rem;
+        margin-bottom: 0;
+        width: 4rem;
+      }
+      > div.blue {
+        background-color: #21252C;
+      }
+      > div.gray {
+        background-color: #363636;
+      }
+      > div.light-grey {
+        background-color: #F6F6F6;
+      }
+      > div.white {
+        background-color: $white;
+        border: 1px solid $black;
+      }
+    }
+  }
+}
+.typography {
+  position: relative;
+  > h2 {
+    color: $exeed-turquoise;
+    font-size: $medium-font-size;
+    letter-spacing: 0.07em;
+    margin: 2rem;
+  }
+  .typography-line {
+    border-top: 1px solid $black;
+    width: 24rem;
+  }
+  > h3 {
+    font-family: $solidkraft-font-familiy;
+    font-size: $title-font-size;
+    font-weight: $sans-serif-light;
+    letter-spacing: 0.07em;
+    margin: 0;
+    position: absolute;
+    right: -1.5rem;
+    top: 10rem;
+    transform: rotate(90deg);
+  }
+  .typography-sphere {
+    background-color: $exeed-turquoise;
+    border-radius: 50%;
+    height: 13rem;
+    margin: 4rem 0 0 4rem;
+    width: 13rem;
+  }
+  .cabin-typography {
+    margin: 0;
+    img {
+      border: 1.1rem solid $black;
+      border-radius: 1rem;
+      height: auto;
+      margin: -3.5rem 0 5rem 1rem;
+      max-width: 28rem;
+      width: 100%;
+    }
+  }
+}
+.website-design {
+  > h3 {
+    border-bottom: 1px solid $black;
+    font-size: 1.1em;
+    font-weight: $sans-serif-regular;
+    letter-spacing: 0.07em;
+    margin-right: 5rem;
+    text-align: right;
+  }
+  .solidkraft-design {
+    margin: 2rem 0;
+    > div {
+      align-items: center;
+      background-color: #F0F0F0;
+      display: flex;
+      flex-wrap: wrap;
+      //justify-content: space-between;
+      margin: 2.5rem;
+      img {
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+        height: 5rem;
+        margin: 1rem .5rem .2rem 2.5rem;
+        width: 8rem;
+        &:last-child {
+          margin-bottom: 1rem;
+          width: 20rem;
+        }
+      }
+      .our-academy {
+        margin-left: 5rem;
+      }
+      .projects {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .visit-website {
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+    position: relative;
+    text-align: center;
+    img {
+      height: auto;
+      max-width: 13.5rem;
+      width: 100%;
+    }
+    a {
+      align-items: center;
+      border-radius: 50%;
+      background-color: $exeed-turquoise;
+      color: $link-color;
+      display: flex;
+      height: 10rem;
+      justify-content: center;
+      letter-spacing: .07em;
+      position: absolute;
+      right: 3rem;
+      top: 2rem;
+      width: 10rem;
+    }
+  }
+}
+footer.footer {
+  flex-direction: column;
+  padding: 0;
+  > p {
+    border: 0;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  h2 {
+    border-bottom: 1px solid $base-border-color-2;
+    font-size: 2.8em;
+    margin-bottom: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
