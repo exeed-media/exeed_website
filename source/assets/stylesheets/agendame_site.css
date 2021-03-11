@@ -546,17 +546,8 @@ body > header img:first-child {
 .branding > img {
   height: auto;
   margin: 7rem auto;
-  max-width: 24rem;
+  max-width: 27rem;
   width: 100%;
-}
-.branding > h2 {
-  border-bottom: 1px solid #fff;
-  color: #72DDDD;
-  float: left;
-  font-size: 4em;
-  letter-spacing: 0.07em;
-  margin: 0 0 -1.8rem 3rem;
-  padding: 0 1rem;
 }
 .branding > div {
   align-items: center;
@@ -573,6 +564,28 @@ body > header img:first-child {
   height: auto;
   max-width: 12rem;
   width: 100%;
+}
+.branding > div h2 {
+  border-bottom: 1px solid #fff;
+  color: #72DDDD;
+  display: flex;
+  font-size: 4em;
+  justify-content: flex-start;
+  left: 0;
+  letter-spacing: 0.07em;
+  margin: 0 0 0 3rem;
+  padding: 0 1rem;
+  position: absolute;
+  top: -2.8rem;
+}
+.branding > div .red-circle {
+  background-color: #FF3232;
+  border-radius: 50%;
+  display: none;
+  height: 3rem;
+  position: absolute;
+  right: 10rem;
+  width: 3rem;
 }
 
 .color-palette > h3 {
@@ -640,26 +653,27 @@ body > header img:first-child {
 }
 .typography .reem-typography .agendame-typography {
   align-items: center;
-  border: 6px solid rgba(0, 0, 0, 0.9);
+  border: 0.5rem solid rgba(0, 0, 0, 0.9);
   border-radius: 1rem;
   display: flex;
   font-family: "Reem Kufi", sans-serif;
   font-size: 2.4em;
-  height: 10rem;
+  height: 18vh;
   justify-content: center;
   letter-spacing: 0.07em;
   margin: 7rem 2rem 0 2rem;
-  width: 17rem;
+  width: 60vw;
 }
 .typography .typography-sphere {
   background-color: #72DDDD;
   border-radius: 50%;
-  height: 7rem;
+  height: 20vw;
   margin-top: -3rem;
-  width: 7rem;
+  width: 20vw;
 }
 
 .design {
+  margin-bottom: 4rem;
   text-align: center;
 }
 .design > img {
@@ -756,6 +770,161 @@ footer.footer h2 strong {
   margin: 0 0 0 1rem;
 }
 
+@media (min-width: 55rem) {
+  .agendame-concept .concept p {
+    margin-right: 8rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+  }
+  .agendame-concept .concept h2 {
+    font-size: 7em;
+  }
+  .agendame-concept .agendame-screen .desktop-screen {
+    display: block;
+    height: auto;
+    margin: 0;
+    max-width: 60rem;
+    min-width: 20rem;
+    width: 100%;
+  }
+  .agendame-concept .agendame-screen .mobile-screen {
+    display: none;
+  }
+  .agendame-concept .agendame-screen > div {
+    height: 8rem;
+    left: -5rem;
+    width: 8rem;
+  }
+  .agendame-concept .agendame-screen > div img {
+    display: none;
+  }
+  .agendame-concept .agendame-screen > div a {
+    display: block;
+  }
+
+  .second-concept {
+    margin: 1rem 4rem 5rem 4rem;
+  }
+  .second-concept > div {
+    margin: 0 8rem;
+    width: 45rem;
+  }
+  .second-concept > p {
+    margin-right: 12rem;
+  }
+
+  .branding > img {
+    max-width: 45rem;
+    min-width: 20rem;
+  }
+  .branding > div {
+    height: 30rem;
+  }
+  .branding > div h2 {
+    font-size: 5em;
+  }
+  .branding > div img {
+    max-width: 15rem;
+  }
+  .branding > div .red-circle {
+    display: block;
+  }
+
+  .color-palette > h3 {
+    margin-left: 0;
+  }
+  .color-palette .colors .color > div {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .typography > h2 {
+    display: block;
+    font-size: 5em;
+    margin-right: 2rem;
+    padding-bottom: 3rem;
+    text-align: right;
+  }
+  .typography > h3 {
+    font-size: 5em;
+    right: -8rem;
+    top: 18rem;
+  }
+  .typography .reem-typography .agendame-typography {
+    border: 1rem solid rgba(0, 0, 0, 0.9);
+    font-size: 4em;
+    height: 25rem;
+    margin: 7rem 2rem 0 2rem;
+    position: relative;
+    width: 40rem;
+    z-index: -1;
+  }
+  .typography .reem-typography .agendame-typography .red-circle {
+    background-color: #FF3232;
+    border-radius: 50%;
+    bottom: 5rem;
+    height: 4rem;
+    position: absolute;
+    right: 4rem;
+    width: 4rem;
+  }
+
+  .design {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .design > img {
+    max-width: 25rem;
+  }
+  .design .agendame-app {
+    margin: 0 4rem;
+  }
+  .design .design-line {
+    display: none;
+  }
+  .design .agendame_website {
+    display: none;
+  }
+
+  footer.footer {
+    flex-direction: row;
+    padding-top: 2rem;
+  }
+  footer.footer .content {
+    flex-direction: row-reverse;
+  }
+  footer.footer .content-menu {
+    text-align: left;
+  }
+  footer.footer h2 {
+    border: 0;
+  }
+  footer.footer h2 strong {
+    display: inline;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 80em) {
+  .agendame-concept .concept p {
+    font-size: 1.1em;
+    margin-right: 15rem;
+  }
+  .agendame-concept .concept h2 {
+    font-size: 9em;
+  }
+  .agendame-concept .agendame-screen .desktop-screen {
+    display: block;
+    height: auto;
+    max-width: 60rem;
+    min-width: 25rem;
+    width: 100%;
+  }
+  .agendame-concept .agendame-screen > div {
+    height: 11rem;
+    width: 11rem;
+  }
+}
 .footer {
   padding: 4rem 0 0;
   background-color: #1E1F21;
