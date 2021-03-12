@@ -5,12 +5,14 @@
   flex-direction: column;
   grid-area: whoweare;
   padding-bottom: 4rem;
+  position: relative;
 
   > h1 {
     letter-spacing: 0.05em;
     font-size: 4.5em;
-    margin: -14rem auto 0 auto;
-    z-index: 200;
+    margin: 5rem auto 0 auto;
+    position: relative;
+    z-index: 10;
     .we-turquoise {
       color: $exeed-turquoise;
       letter-spacing: 0.1em;
@@ -82,10 +84,10 @@
     > h1 {
       border-bottom: 2px solid $base-border-color-2;
       font-size: $medium-font-size;
-      margin-top: -25rem;
       padding-right: 12rem;
       text-align: right;
       width: 100%;
+      z-index: 200!important;
 
       .we-turquoise {
         color: $white;
