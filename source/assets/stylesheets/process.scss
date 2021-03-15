@@ -12,12 +12,18 @@
     }
   }
   .process-container {
-    margin-bottom: 50rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     > div {
+      flex: 0 0 auto;
       background-color: #EBEBEB;
       border-radius: 1.3rem;
       padding: 2rem 1.5rem;
-      margin: 5rem auto;
+      margin: 5rem 1rem;
+      scroll-snap-align: center;
       width: 80vw;
       > div {
         align-items: baseline;
@@ -44,6 +50,9 @@
       }
     }
   }
+  .desktop-circle {
+    display: none;
+  }
   > img {
     bottom: -12rem;
     left: 0;
@@ -64,18 +73,20 @@
   .our-process {
     .process-container {
     }
+    .mobile-circle {
+      display: none;
+    }
+    .desktop-circle {
+      display: block;
+    }
     > img {
-      bottom: -14.4rem;
-      display:grid;
+      bottom: -13.35rem;
       left: auto;
       margin: 0;
       max-height: 30rem;
-      max-width: 30rem;
+      max-width: 25rem;
       overflow-x: hidden;
-      // white-space:normal;
-      // text-overflow: clip;
-      right: -5rem;
-      //z-index: 1000;
+      right: 0;
     }
   }
 }
