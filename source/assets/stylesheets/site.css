@@ -861,6 +861,9 @@ ul {
 .our-process > h1 span {
   color: #72DDDD;
 }
+.our-process .process-vector {
+  display: none;
+}
 .our-process .process-container {
   display: flex;
   flex-wrap: nowrap;
@@ -920,6 +923,72 @@ ul {
     overflow-x: hidden;
   }
 
+  .our-process > h1 {
+    border: 0;
+    font-size: 8em;
+    line-height: 9rem;
+    margin: 5rem 3rem -5rem auto;
+    padding: 0;
+    position: relative;
+    text-align: right;
+    z-index: 1;
+  }
+  .our-process .process-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .our-process .process-container .process-vector {
+    display: block;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+    max-width: 176rem;
+    max-height: 211rem;
+    z-index: -1000;
+  }
+  .our-process .process-container > div {
+    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
+    width: 25rem;
+  }
+  .our-process .process-container > div > div h2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+  }
+  .our-process .process-container > div > div h3 {
+    font-size: 0.6em;
+  }
+  .our-process .process-container > div > p {
+    background-color: #fff;
+    font-size: 1.2em;
+    line-height: 1.8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .our-process .process-container div.concept {
+    margin-top: 20vw;
+  }
+  .our-process .process-container div.design {
+    align-self: flex-start;
+    margin-left: 3rem;
+    margin-top: 14vw;
+  }
+  .our-process .process-container div.development {
+    align-self: flex-end;
+    margin-right: 3rem;
+  }
+  .our-process .process-container div.marketing {
+    align-self: flex-start;
+    margin-left: 3rem;
+    padding-right: 2rem;
+  }
   .our-process .mobile-circle {
     display: none;
   }
@@ -934,6 +1003,21 @@ ul {
     max-width: 25rem;
     overflow-x: hidden;
     right: 0;
+  }
+}
+@media screen and (min-width: 80em) {
+  .our-process > h1 {
+    font-size: 10em;
+    margin: 5rem 5rem -5rem auto;
+  }
+  .our-process div.design {
+    margin-top: 20vw;
+  }
+  .our-process div.development {
+    margin-top: 14vw;
+  }
+  .our-process div.marketing {
+    margin-top: 10vw;
   }
 }
 .who-we-are {
