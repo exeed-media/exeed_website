@@ -937,7 +937,7 @@ ul {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 6rem;
     overflow: hidden;
     position: relative;
   }
@@ -1162,7 +1162,7 @@ ul {
 .our-work {
   grid-area: ourwork;
 }
-.our-work h1 {
+.our-work .ourwork-header h1 {
   border-bottom: 2px solid rgba(0, 0, 0, 0.9);
   border-top: 2px solid rgba(0, 0, 0, 0.9);
   font-size: 7em;
@@ -1171,10 +1171,10 @@ ul {
   margin-right: 6rem;
   padding: 1.5rem 0;
 }
-.our-work h1 span {
+.our-work .ourwork-header h1 span {
   color: #72DDDD;
 }
-.our-work > a {
+.our-work .ourwork-header > a {
   align-items: center;
   background-color: #72DDDD;
   border-radius: 50%;
@@ -1186,6 +1186,9 @@ ul {
   margin: -3.5rem 5.4rem 0 0;
   width: 12rem;
 }
+.our-work > img {
+  display: none;
+}
 .our-work .projects {
   align-items: center;
   display: flex;
@@ -1195,18 +1198,24 @@ ul {
   margin: 12rem 0;
   width: 100%;
 }
-.our-work .projects > div {
+.our-work .projects .project {
+  display: flex;
+}
+.our-work .projects .solidkraft, .our-work .projects .agendame, .our-work .projects .exeed {
   cursor: pointer;
   height: 10rem;
   margin: 1rem 1rem 0 0;
   position: relative;
   width: 14rem;
 }
-.our-work .projects > div > img {
+.our-work .projects .solidkraft > img, .our-work .projects .agendame > img, .our-work .projects .exeed > img {
   height: 100%;
   width: 100%;
 }
-.our-work .projects > div div {
+.our-work .projects .solidkraft .website-desktop, .our-work .projects .agendame .website-desktop, .our-work .projects .exeed .website-desktop {
+  display: none;
+}
+.our-work .projects .solidkraft div, .our-work .projects .agendame div, .our-work .projects .exeed div {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   bottom: 0;
@@ -1220,17 +1229,17 @@ ul {
   right: 0;
   top: 0;
 }
-.our-work .projects > div div h2 {
+.our-work .projects .solidkraft div h2, .our-work .projects .agendame div h2, .our-work .projects .exeed div h2 {
   font-size: 1.7em;
   margin: 1rem 0 0 0;
 }
-.our-work .projects > div div a {
+.our-work .projects .solidkraft div a, .our-work .projects .agendame div a, .our-work .projects .exeed div a {
   align-items: center;
   color: #fff;
   display: flex;
   margin: 0;
 }
-.our-work .projects > div div a img {
+.our-work .projects .solidkraft div a img, .our-work .projects .agendame div a img, .our-work .projects .exeed div a img {
   margin: 0;
   max-width: 2.5rem;
   width: 100%;
@@ -1239,6 +1248,92 @@ ul {
   width: 25rem;
 }
 
+@media screen and (min-width: 55em) {
+  .our-work {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .our-work .ourwork-header h1 {
+    margin: 12rem 0 2rem 3rem;
+    padding-right: 10rem;
+  }
+  .our-work .ourwork-header > a {
+    margin: 0 0 10rem 0;
+  }
+  .our-work > img {
+    cursor: pointer;
+    display: block;
+    height: auto;
+    margin-bottom: 15rem;
+    max-width: 8rem;
+  }
+  .our-work .projects {
+    align-items: center;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    position: absolute;
+    right: -85%;
+    top: 0;
+    transition: all 500ms ease;
+    width: 100%;
+    z-index: 10000;
+  }
+  .our-work .projects .project {
+    flex-direction: column;
+  }
+  .our-work .projects .solidkraft, .our-work .projects .agendame, .our-work .projects .exeed {
+    height: auto;
+    margin: 0 3rem 3rem 0;
+    padding: 0;
+    width: auto;
+  }
+  .our-work .projects .solidkraft > img, .our-work .projects .agendame > img, .our-work .projects .exeed > img {
+    height: auto;
+    margin: 0;
+    max-width: 40rem;
+    width: 100%;
+  }
+  .our-work .projects .solidkraft .website-desktop, .our-work .projects .agendame .website-desktop, .our-work .projects .exeed .website-desktop {
+    display: block;
+  }
+  .our-work .projects .solidkraft .website-mobile, .our-work .projects .agendame .website-mobile, .our-work .projects .exeed .website-mobile {
+    display: none;
+  }
+  .our-work .projects .solidkraft div, .our-work .projects .agendame div, .our-work .projects .exeed div {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+  }
+  .our-work .projects .solidkraft div h2, .our-work .projects .agendame div h2, .our-work .projects .exeed div h2 {
+    font-size: 3em;
+  }
+  .our-work .projects .solidkraft div a, .our-work .projects .agendame div a, .our-work .projects .exeed div a {
+    font-size: 0.6em;
+  }
+  .our-work .projects .arrows {
+    align-items: center;
+    bottom: 10rem;
+    display: flex;
+    position: absolute;
+    right: 8rem;
+  }
+  .our-work .projects .arrows img {
+    cursor: pointer;
+    height: auto;
+    margin: 0 2rem 0 0;
+    max-width: 6rem;
+  }
+  .our-work .projects .exeed {
+    height: auto;
+    width: auto;
+  }
+}
 .work-with-us {
   background-color: #1E1F21;
   display: flex;
@@ -1353,7 +1448,7 @@ ul {
   .work-with-us .work-with-us-form {
     border-bottom-left-radius: 3.3rem;
     border-top-right-radius: 0;
-    margin: 4rem 0 0 0;
+    margin: 4rem 0 5rem 0;
     width: 50rem;
   }
   .work-with-us .work-with-us-form input {

@@ -1,28 +1,33 @@
 .our-work {
   grid-area: ourwork;
-  h1 {
-    border-bottom: 2px solid $base-border-color-1;
-    border-top: 2px solid $base-border-color-1;
-    font-size: $ourwork-title-size;
-    margin-bottom: 0;
-    margin-left: 3rem;
-    margin-right: 6rem;
-    padding: 1.5rem 0;
-    span {
-      color: $exeed-turquoise;
+  .ourwork-header {
+    h1 {
+      border-bottom: 2px solid $base-border-color-1;
+      border-top: 2px solid $base-border-color-1;
+      font-size: $ourwork-title-size;
+      margin-bottom: 0;
+      margin-left: 3rem;
+      margin-right: 6rem;
+      padding: 1.5rem 0;
+      span {
+        color: $exeed-turquoise;
+      }
+    }
+    > a {
+      align-items: center;
+      background-color: $exeed-turquoise;
+      border-radius: 50%;
+      display: flex;
+      float: right;
+      font-size: $subtitle-font-size;
+      height: 12rem;
+      justify-content: center;
+      margin: -3.5rem 5.4rem 0 0;
+      width: 12rem;
     }
   }
-  > a {
-    align-items: center;
-    background-color: $exeed-turquoise;
-    border-radius: 50%;
-    display: flex;
-    float: right;
-    font-size: $subtitle-font-size;
-    height: 12rem;
-    justify-content: center;
-    margin: -3.5rem 5.4rem 0 0;
-    width: 12rem;
+  > img {
+    display: none;
   }
   .projects {
     align-items: center;
@@ -33,7 +38,11 @@
     margin: 12rem 0;
     width: 100%;
 
-    > div {
+    .project {
+      display: flex;
+    }
+
+    .solidkraft, .agendame, .exeed {
       cursor: pointer;
       height: 10rem;
       margin: 1rem 1rem 0 0;
@@ -42,6 +51,9 @@
       > img {
         height: 100%;
         width: 100%;
+      }
+      .website-desktop {
+        display: none;
       }
       div {
         align-items: center;
@@ -75,6 +87,95 @@
     }
     .exeed {
       width: 25rem;
+    }
+  }
+}
+@media screen and (min-width: 55em) {
+  .our-work {
+    align-items: center;
+    display: flex;
+    position: relative;
+    .ourwork-header {
+      h1 {
+        margin: 12rem 0 2rem 3rem;
+        padding-right: 10rem;
+      }
+      > a {
+        margin: 0 0 10rem 0;
+      }
+    }
+    > img {
+      cursor: pointer;
+      display: block;
+      height: auto;
+      margin-bottom: 15rem;
+      max-width: 8rem;
+    }
+    .projects {
+      align-items: center;
+      align-items: center;
+      background-color: $base-background-1;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      height: 100%;
+      justify-content: flex-start;
+      margin: 0;
+      position: absolute;
+      right: -85%;
+      top: 0;
+      transition: all 500ms ease;
+      width: 100%;
+      z-index: 10000;
+
+      .project {
+        flex-direction: column;
+      }
+      .solidkraft, .agendame, .exeed {
+        height: auto;
+        margin: 0 3rem 3rem 0;
+        padding: 0;
+        width: auto;
+        > img {
+          height: auto;
+          margin: 0;
+          max-width: 40rem;
+          width: 100%;
+        }
+        .website-desktop {
+          display: block;
+        }
+        .website-mobile {
+          display: none;
+        }
+        div {
+          background-color: rgba(0, 0, 0, .8);
+          border-radius: 1rem;
+          h2 {
+            font-size: 3em;
+          }
+          a {
+            font-size: .6em;
+          }
+        }
+      }
+      .arrows {
+        align-items: center;
+        bottom: 10rem;
+        display: flex;
+        position: absolute;
+        right: 8rem;
+        img {
+          cursor: pointer;
+          height: auto;
+          margin: 0 2rem 0 0;
+          max-width: 6rem;
+        }
+      }
+      .exeed {
+        height: auto;
+        width: auto;
+      }
     }
   }
 }
