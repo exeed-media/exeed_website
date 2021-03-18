@@ -1244,6 +1244,9 @@ ul {
   max-width: 2.5rem;
   width: 100%;
 }
+.our-work .projects .arrows {
+  display: none;
+}
 .our-work .projects .exeed {
   width: 25rem;
 }
@@ -1252,6 +1255,7 @@ ul {
   .our-work {
     align-items: center;
     display: flex;
+    overflow-x: hidden;
     position: relative;
   }
   .our-work .ourwork-header h1 {
@@ -1579,31 +1583,74 @@ ul {
     margin: 0 0 2rem 0;
   }
 }
+.landing {
+  position: relative;
+}
 .landing .spheres {
+  align-items: flex-start;
   bottom: 0;
+  display: flex;
   left: 0;
   position: absolute;
+  padding: 0;
   right: 0;
   top: 0;
+  width: 100%;
 }
-.landing .spheres .sphere {
-  background-color: #72DDDD;
-  border-radius: 50%;
-  height: 6rem;
+.landing .spheres img {
+  height: auto;
+  margin: 0;
   position: sticky;
-  width: 6rem;
-  z-index: -100;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
 }
-.landing .spheres .sphere:nth-child(1) {
-  background-color: rgba(117, 221, 221, 0.3);
-  height: 12rem;
-  right: 0rem;
-  top: 19rem;
-  width: 12rem;
+.landing .spheres img:nth-child(1) {
+  max-width: 3rem;
+  top: 7rem;
 }
-.landing .spheres .sphere:nth-child(2) {
-  background-color: rgba(117, 221, 221, 0.3);
-  top: 15%;
+.landing .spheres img:nth-child(2) {
+  left: 6rem;
+  max-width: 6rem;
+  top: 14rem;
+}
+.landing .spheres img:nth-child(3) {
+  left: 100%;
+  max-width: 15rem;
+}
+.landing .spheres-2 {
+  align-items: flex-start;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.landing .spheres-2 img {
+  height: auto;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+.landing .spheres-2 img:nth-child(1) {
+  left: 3rem;
+  max-width: 10rem;
+  top: 35rem;
+}
+.landing .spheres-2 img:nth-child(2) {
+  left: 12rem;
+  max-width: 6rem;
+  top: 30rem;
+}
+.landing .spheres-2 img:nth-child(3) {
+  left: 70%;
+  max-width: 8rem;
+  top: 38rem;
 }
 
 .services {

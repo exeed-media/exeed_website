@@ -85,6 +85,9 @@
         }
       }
     }
+    .arrows {
+      display: none;
+    }
     .exeed {
       width: 25rem;
     }
@@ -94,6 +97,7 @@
   .our-work {
     align-items: center;
     display: flex;
+    overflow-x: hidden;
     position: relative;
     .ourwork-header {
       h1 {

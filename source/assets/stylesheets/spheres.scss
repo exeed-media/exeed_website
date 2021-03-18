@@ -2,36 +2,77 @@
   //overflow-x: hidden;
 }
 .landing {
+  position: relative;
   .spheres {
+    //background-color: pink;
+    align-items: flex-start;
     bottom: 0;
+    display: flex;
     left: 0;
     position: absolute;
+    padding: 0;
+    right: 0;
+    //text-align: left;
+    top: 0;
+    width: 100%;
+
+
+    img {
+      height: auto;
+      margin: 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: -1000;
+    }
+    img:nth-child(1) {
+      max-width: 3rem;
+      top: 7rem;
+    }
+    img:nth-child(2) {
+      left: 6rem;
+      max-width: 6rem;
+      top: 14rem;
+    }
+    img:nth-child(3) {
+      left: 100%;
+      max-width: 15rem;
+    }
+  }
+  .spheres-2 {
+    align-items: flex-start;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: absolute;
+    padding: 0;
     right: 0;
     top: 0;
-
-    .sphere {
-      background-color: $exeed-turquoise;
-      border-radius: 50%;
-      height: 6rem;
+    width: 100%;
+    img {
+      height: auto;
+      margin: 0;
       position: sticky;
-      width: 6rem;
-      z-index: -100;
+      top: 0;
+      width: 100%;
+      z-index: -1000;
     }
-    .sphere:nth-child(1) {
-      background-color: rgba(117, 221, 221, 0.3);
-      height: 12rem;
-      //margin-right: -25rem;
-      right: 0rem;
-      top: 19rem;
-      //float: right;
-      //margin-right: -22rem;
-      //margin-top: -8rem;
-      width: 12rem;
+    img:nth-child(1) {
+      left: 3rem;
+      max-width: 10rem;
+      top: 35rem;
+      //width: 8rem;
     }
-    .sphere:nth-child(2) {
-      background-color: rgba(117, 221, 221, 0.3);
-      //left: -2rem;
-      top: 15%;
+    img:nth-child(2) {
+      left: 12rem;
+      max-width: 6rem;
+      top: 30rem;
+      //width: 5rem;
+    }
+    img:nth-child(3) {
+      left: 70%;
+      max-width: 8rem;
+      top: 38rem;
     }
   }
 }

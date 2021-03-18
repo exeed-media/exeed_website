@@ -1,17 +1,102 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |       background-color: $exeed-turquoise;
- *    |                         ^^^^^^^^^^^^^^^^
- *    '
- *   stylesheets/spheres.scss 13:25  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502        background-color: $exeed-turquoise;\a    \2502                          ^^^^^^^^^^^^^^^^\a    \2575 \a   stylesheets/spheres.scss 13:25  root stylesheet";
+.landing {
+  position: relative;
 }
+.landing .spheres {
+  align-items: flex-start;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.landing .spheres img {
+  height: auto;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+.landing .spheres img:nth-child(1) {
+  max-width: 3rem;
+  top: 7rem;
+}
+.landing .spheres img:nth-child(2) {
+  left: 6rem;
+  max-width: 6rem;
+  top: 14rem;
+}
+.landing .spheres img:nth-child(3) {
+  left: 100%;
+  max-width: 15rem;
+}
+.landing .spheres-2 {
+  align-items: flex-start;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.landing .spheres-2 img {
+  height: auto;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+.landing .spheres-2 img:nth-child(1) {
+  left: 3rem;
+  max-width: 10rem;
+  top: 35rem;
+}
+.landing .spheres-2 img:nth-child(2) {
+  left: 12rem;
+  max-width: 6rem;
+  top: 30rem;
+}
+.landing .spheres-2 img:nth-child(3) {
+  left: 70%;
+  max-width: 8rem;
+  top: 38rem;
+}
+
+.services {
+  position: relative;
+}
+.services .spheres {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.services .spheres .sphere {
+  background-color: red;
+  border-radius: 50%;
+  height: 6rem;
+  position: sticky;
+  width: 6rem;
+  z-index: -100;
+}
+.services .spheres .sphere:nth-child(1) {
+  background-color: red;
+  height: 4rem;
+  float: left;
+  margin: 3rem;
+  width: 4rem;
+}
+.services .spheres .sphere:nth-child(2) {
+  background-color: pink;
+  left: -2rem;
+  top: 25%;
+}
+
+/*# sourceMappingURL=spheres.css.map */
