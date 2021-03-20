@@ -1,9 +1,16 @@
 .services {
   grid-area: services;
-
+  .cover {
+    background-color: $base-background-1;
+    height: 11rem;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+  }
   .services-top-line {
     border-top: 2px solid $black;
-    margin-top: 6rem;
+    margin-top: 0rem;
     width: 15rem;
   }
 

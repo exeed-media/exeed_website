@@ -720,9 +720,17 @@ ul {
 .services {
   grid-area: services;
 }
+.services .cover {
+  background-color: #fff;
+  height: 11rem;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
 .services .services-top-line {
   border-top: 2px solid rgba(0, 0, 0, 0.9);
-  margin-top: 6rem;
+  margin-top: 0rem;
   width: 15rem;
 }
 .services > h1 {
@@ -855,7 +863,7 @@ ul {
   border-bottom: 2px solid rgba(0, 0, 0, 0.9);
   border-top: 2px solid rgba(0, 0, 0, 0.9);
   font-size: 4em;
-  margin: 8rem 8rem 4rem 2rem;
+  margin: 1.5rem 8rem 4rem 2rem;
   padding: 1rem 0;
 }
 .our-process > h1 span {
@@ -1657,31 +1665,111 @@ ul {
   position: relative;
 }
 .services .spheres {
+  align-items: flex-start;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.services .spheres img {
+  height: auto;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+.services .spheres img:nth-child(1) {
+  left: 22%;
+  max-width: 6rem;
+  top: 14rem;
+}
+.services .spheres img:nth-child(2) {
+  left: 70%;
+  max-width: 6rem;
+}
+.services .spheres img:nth-child(3) {
+  left: 100%;
+  max-width: 7rem;
+  top: 40%;
+  z-index: 10;
+}
+.services .spheres-2 {
+  align-items: flex-start;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.services .spheres-2 img {
+  height: auto;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+.services .spheres-2 img:nth-child(1) {
+  max-width: 5rem;
+  top: 38rem;
+}
+.services .spheres-2 img:nth-child(2) {
+  left: 55%;
+  max-width: 8rem;
+  top: 45rem;
+}
+.services .spheres-2 img:nth-child(3) {
+  max-width: 6rem;
+  top: 60rem;
+}
+.services .spheres-2 img:nth-child(4) {
+  left: 70%;
+  max-width: 7rem;
+  top: 65rem;
+}
+
+.our-process {
+  position: relative;
+}
+.our-process .sphere-process {
+  position: absolute;
+  height: auto;
+  margin-right: 2rem;
+  max-width: 10rem;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1000;
+}
+.our-process .spheres {
   bottom: 0;
   left: 0;
   position: absolute;
+  padding: 0;
   right: 0;
   top: 0;
+  width: 100%;
+  z-index: -1000;
 }
-.services .spheres .sphere {
-  background-color: red;
-  border-radius: 50%;
-  height: 6rem;
+.our-process .spheres img {
+  height: auto;
+  margin: 0;
+  max-width: 12rem;
   position: sticky;
-  width: 6rem;
-  z-index: -100;
+  top: 0;
+  width: 100%;
 }
-.services .spheres .sphere:nth-child(1) {
-  background-color: red;
-  height: 4rem;
-  float: left;
-  margin: 3rem;
-  width: 4rem;
-}
-.services .spheres .sphere:nth-child(2) {
-  background-color: pink;
-  left: -2rem;
-  top: 25%;
+.our-process .spheres img {
+  left: 40%;
+  margin-top: 15rem;
 }
 
 /*# sourceMappingURL=site.css.map */

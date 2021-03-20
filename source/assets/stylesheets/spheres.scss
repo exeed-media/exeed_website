@@ -61,13 +61,11 @@
       left: 3rem;
       max-width: 10rem;
       top: 35rem;
-      //width: 8rem;
     }
     img:nth-child(2) {
       left: 12rem;
       max-width: 6rem;
       top: 30rem;
-      //width: 5rem;
     }
     img:nth-child(3) {
       left: 70%;
@@ -79,33 +77,112 @@
 .services {
   position: relative;
   .spheres {
+    align-items: flex-start;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    img {
+      height: auto;
+      margin: 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: -1000;
+    }
+    img:nth-child(1) {
+      left: 22%;
+      max-width: 6rem;
+      top: 14rem;
+    }
+    img:nth-child(2) {
+      left: 70%;
+      max-width: 6rem;
+    }
+    img:nth-child(3) {
+      left: 100%;
+      max-width: 7rem;
+      top: 40%;
+      z-index: 10;
+    }
+  }
+  .spheres-2 {
+    align-items: flex-start;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    img {
+      height: auto;
+      margin: 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: -1000;
+    }
+    img:nth-child(1) {
+      max-width: 5rem;
+      top: 38rem;
+    }
+    img:nth-child(2) {
+      left: 55%;
+      max-width: 8rem;
+      top: 45rem;
+    }
+    img:nth-child(3) {
+      max-width: 6rem;
+      top: 60rem;
+    }
+    img:nth-child(4) {
+      left: 70%;
+      max-width: 7rem;
+      top: 65rem;
+    }
+  }
+}
+.our-process {
+  position: relative;
+  .sphere-process {
+    position: absolute;
+    height: auto;
+    margin-right: 2rem;
+    max-width: 10rem;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+  }
+  .spheres {
     bottom: 0;
     left: 0;
     position: absolute;
+    padding: 0;
     right: 0;
     top: 0;
+    width: 100%;
+    z-index: -1000;
 
-    .sphere {
-      background-color: red;
-      border-radius: 50%;
-      height: 6rem;
+    img {
+      height: auto;
+      margin: 0;
+      max-width: 12rem;
       position: sticky;
-      width: 6rem;
-      z-index: -100;
+      top: 0;
+      width: 100%;
     }
-    .sphere:nth-child(1) {
-      background-color: red;
-      height: 4rem;
-      float: left;
-      margin: 3rem;
-      // right: 0;
-      // top: 0;
-      width: 4rem;
-    }
-    .sphere:nth-child(2) {
-      background-color: pink;
-      left: -2rem;
-      top: 25%;
+    img {
+      left: 40%;
+      margin-top: 15rem;
     }
   }
 }
