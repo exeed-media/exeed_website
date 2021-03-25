@@ -1,6 +1,3 @@
-.landing {
-  position: relative;
-}
 .landing .spheres {
   align-items: flex-start;
   bottom: 0;
@@ -88,7 +85,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: -1000;
+  z-index: 1;
 }
 .services .spheres img:nth-child(1) {
   left: 22%;
@@ -122,7 +119,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: -1000;
+  z-index: 1;
 }
 .services .spheres-2 img:nth-child(1) {
   max-width: 5rem;
@@ -154,7 +151,7 @@
   right: 0;
   top: 0;
   width: 100%;
-  z-index: -1000;
+  z-index: 1;
 }
 .our-process .spheres {
   bottom: 0;
@@ -168,15 +165,128 @@
 }
 .our-process .spheres img {
   height: auto;
+  left: 40%;
   margin: 0;
+  margin-top: 15rem;
   max-width: 12rem;
   position: sticky;
   top: 0;
   width: 100%;
 }
-.our-process .spheres img {
-  left: 40%;
-  margin-top: 15rem;
+
+.spheres-landing-desktop {
+  display: none;
+}
+
+.desktop-sphere {
+  display: none;
+}
+
+@media screen and (min-width: 55em) {
+  .landing .spheres, .landing .spheres-2 {
+    display: none;
+  }
+
+  .spheres-landing-desktop {
+    bottom: 0;
+    display: block;
+    height: 210%;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+  }
+  .spheres-landing-desktop img {
+    height: auto;
+    max-width: 8rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  .spheres-landing-desktop img:nth-child(1) {
+    left: 2rem;
+    top: 50%;
+  }
+  .spheres-landing-desktop img:nth-child(2) {
+    left: 2rem;
+    top: 85%;
+  }
+  .spheres-landing-desktop img:nth-child(3) {
+    left: 25rem;
+    top: 60%;
+  }
+  .spheres-landing-desktop img:nth-child(4) {
+    left: 50rem;
+    max-width: 10rem;
+    top: 75%;
+  }
+
+  .services .spheres img:nth-child(1) {
+    left: 3rem;
+    max-width: 8rem;
+    top: 20%;
+  }
+  .services .spheres img:nth-child(2) {
+    left: 50%;
+    max-width: 8rem;
+    top: 3rem;
+  }
+  .services .spheres img:nth-child(3) {
+    left: 100%;
+    max-width: 5rem;
+    top: 70%;
+    z-index: 1;
+  }
+  .services .spheres-2 img:nth-child(1) {
+    left: 5rem;
+    max-width: 8rem;
+    top: 90%;
+  }
+  .services .spheres-2 img:nth-child(2) {
+    left: 30%;
+    max-width: 8rem;
+    top: 60%;
+  }
+  .services .spheres-2 img:nth-child(3) {
+    left: 80%;
+    max-width: 8rem;
+    top: -3rem;
+  }
+
+  .our-process .sphere-process {
+    margin-right: 15rem;
+    max-width: 15rem;
+  }
+  .our-process .spheres img {
+    left: 0;
+    margin: 0;
+    max-width: 8rem;
+    opacity: 0.4;
+    z-index: 10;
+  }
+  .our-process .spheres img:nth-child(2) {
+    left: 20rem;
+    top: 70%;
+  }
+  .our-process .spheres img:nth-child(3) {
+    left: 55%;
+    top: 0;
+  }
+  .our-process .spheres img:nth-child(4) {
+    left: 85%;
+    top: 85%;
+  }
+
+  .mobile-sphere {
+    display: none;
+  }
+
+  .desktop-sphere {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=spheres.css.map */
