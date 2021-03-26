@@ -280,6 +280,106 @@
     top: 85%;
   }
 
+  .who-we-are .cover {
+    display: block;
+  }
+  .who-we-are .spheres {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .who-we-are .spheres img {
+    height: auto;
+    margin: 0;
+    max-width: 5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  .who-we-are .spheres img:nth-child(1) {
+    left: 5rem;
+    top: 15%;
+  }
+  .who-we-are .spheres img:nth-child(2) {
+    left: 35%;
+    top: 40%;
+  }
+  .who-we-are .spheres img:nth-child(3) {
+    left: 70%;
+    top: 70%;
+  }
+
+  .our-work .spheres {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+  }
+  .our-work .spheres img {
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .our-work .spheres img:nth-child(1) {
+    left: 0;
+    max-width: 14rem;
+    top: 70%;
+  }
+  .our-work .spheres img:nth-child(2) {
+    left: 45%;
+    max-width: 12rem;
+    top: 0rem;
+  }
+  .our-work .spheres-2 {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+  }
+  .our-work .spheres-2 img {
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .our-work .spheres-2 img:nth-child(1) {
+    left: 50%;
+    max-width: 10rem;
+    top: 70%;
+  }
+  .our-work .spheres-2 img:nth-child(2) {
+    left: 80%;
+    max-width: 7rem;
+    top: 2rem;
+  }
+
+  .work-with-us {
+    position: relative;
+  }
+  .work-with-us .work-with-us-sphere {
+    height: auto;
+    margin: 0;
+    max-width: 12rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
   .mobile-sphere {
     display: none;
   }
