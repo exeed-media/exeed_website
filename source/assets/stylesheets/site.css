@@ -437,6 +437,7 @@ ul {
   display: flex;
   grid-area: header;
   justify-content: space-between;
+  z-index: 1000;
 }
 .header .logo.is-hidden {
   display: none;
@@ -633,6 +634,8 @@ ul {
 }
 .landing .landing-video .video video {
   height: auto;
+  outline: none;
+  position: relative;
   width: 100%;
 }
 .landing .landing-video a {
@@ -694,8 +697,10 @@ ul {
     max-width: 32.5rem;
     position: absolute;
     right: -10rem;
+    transition: all 500ms ease;
     top: 10rem;
     width: 100%;
+    z-index: 1000;
   }
   .landing .landing-video .video video {
     height: auto;
@@ -713,6 +718,21 @@ ul {
   }
   .landing .landing-second-animation {
     color: rgba(0, 0, 0, 0.9);
+  }
+  .landing .video-active {
+    background-color: transparent;
+    max-height: 100%;
+    max-width: 100%;
+    right: 0;
+    top: 0;
+  }
+  .landing .video-active .video video {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+  }
+  .landing .video-active a {
+    display: none;
   }
 }
 .services {
@@ -737,6 +757,8 @@ ul {
   align-self: flex-start;
   font-size: 5em;
   margin-left: 2.3rem;
+  position: relative;
+  z-index: 10;
 }
 .services > h1 span {
   color: #72DDDD;
@@ -863,7 +885,7 @@ ul {
 }
 .our-process .cover {
   background-color: #fff;
-  height: 20rem;
+  height: 10rem;
   position: absolute;
   width: 100%;
   z-index: -100;
@@ -1202,6 +1224,7 @@ ul {
   .who-we-are .team-info a {
     margin-bottom: 3rem;
     margin-left: 20rem;
+    z-index: 100;
   }
 }
 .our-work {
@@ -1235,12 +1258,10 @@ ul {
   display: none;
 }
 .our-work .projects {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  margin: 12rem 0;
   width: 100%;
 }
 .our-work .projects .project {
@@ -1730,7 +1751,6 @@ ul {
   left: 100%;
   max-width: 7rem;
   top: 40%;
-  z-index: 10;
 }
 .services .spheres-2 {
   align-items: flex-start;
@@ -1802,6 +1822,10 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
+}
+
+.who-we-are .spheres, .who-we-are .spheres-2, .our-work .spheres, .our-work .spheres-2 {
+  display: none;
 }
 
 .spheres-landing-desktop {
@@ -1915,6 +1939,7 @@ ul {
   }
   .who-we-are .spheres {
     bottom: 0;
+    display: block;
     left: 0;
     position: absolute;
     padding: 0;
@@ -1946,6 +1971,7 @@ ul {
 
   .our-work .spheres {
     bottom: 0;
+    display: block;
     left: 0;
     position: absolute;
     right: 0;
@@ -1968,7 +1994,7 @@ ul {
   .our-work .spheres img:nth-child(2) {
     left: 45%;
     max-width: 12rem;
-    top: 0rem;
+    top: 0.5rem;
   }
   .our-work .spheres-2 {
     bottom: 0;

@@ -82,6 +82,8 @@
 
     .video video {
       height: auto;
+      outline: none;
+      position: relative;
       width: 100%;
     }
 
@@ -151,8 +153,10 @@
       max-width: 32.5rem;
       position: absolute;
       right: -10rem;
+      transition: all 500ms ease;
       top: 10rem;
       width: 100%;
+      z-index: 1000;
 
       .video video {
         height: auto;
@@ -175,6 +179,21 @@
     }
     .landing-second-animation {
       color: $black;
+    }
+    .video-active {
+      background-color: transparent;
+      max-height: 100%;
+      max-width: 100%;
+      right: 0;
+      top: 0;
+      .video video {
+        position: absolute;
+        top: 3rem;
+        width: 100%;
+      }
+      a {
+        display: none;
+      }
     }
   }
 }
