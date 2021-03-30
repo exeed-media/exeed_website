@@ -100,7 +100,6 @@
   left: 100%;
   max-width: 7rem;
   top: 40%;
-  z-index: 10;
 }
 .services .spheres-2 {
   align-items: flex-start;
@@ -172,6 +171,10 @@
   position: sticky;
   top: 0;
   width: 100%;
+}
+
+.who-we-are .spheres, .who-we-are .spheres-2, .our-work .spheres, .our-work .spheres-2 {
+  display: none;
 }
 
 .spheres-landing-desktop {
@@ -285,6 +288,7 @@
   }
   .who-we-are .spheres {
     bottom: 0;
+    display: block;
     left: 0;
     position: absolute;
     padding: 0;
@@ -316,6 +320,7 @@
 
   .our-work .spheres {
     bottom: 0;
+    display: block;
     left: 0;
     position: absolute;
     right: 0;
@@ -338,7 +343,7 @@
   .our-work .spheres img:nth-child(2) {
     left: 45%;
     max-width: 12rem;
-    top: 0rem;
+    top: 0.5rem;
   }
   .our-work .spheres-2 {
     bottom: 0;
