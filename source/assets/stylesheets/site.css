@@ -638,6 +638,17 @@ ul {
   position: relative;
   width: 100%;
 }
+.landing .landing-video > img {
+  cursor: pointer;
+  display: none;
+  height: auto;
+  max-width: 0.6rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 3.5em;
+  width: 100%;
+  z-index: 10000;
+}
 .landing .landing-video a {
   align-items: center;
   background-color: #72DDDD;
@@ -705,6 +716,9 @@ ul {
   .landing .landing-video .video video {
     height: auto;
     width: 80%;
+  }
+  .landing .landing-video > img {
+    display: block;
   }
   .landing .landing-video a {
     background-color: transparent;
@@ -1168,7 +1182,7 @@ ul {
   .who-we-are > h1 {
     border-bottom: 2px solid #fff;
     font-size: 4em;
-    padding-right: 12rem;
+    padding-right: 14rem;
     text-align: right;
     width: 100%;
     z-index: 200 !important;
@@ -1187,7 +1201,7 @@ ul {
     margin-left: 5rem;
   }
   .who-we-are .philosophy p {
-    margin-left: 25rem;
+    margin-left: 15rem;
     margin-right: 10rem;
   }
   .who-we-are img {
@@ -1209,7 +1223,7 @@ ul {
     width: 40%;
   }
   .who-we-are .our-team p {
-    margin-left: 7rem;
+    margin-left: 3rem;
     margin-right: 25rem;
   }
   .who-we-are .team-info {

@@ -80,11 +80,24 @@
     text-align: center;
     width: 100%;
 
-    .video video {
+    .video {
+      video {
+        height: auto;
+        outline: none;
+        position: relative;
+        width: 100%;
+      }
+    }
+    > img {
+      cursor: pointer;
+      display: none;
       height: auto;
-      outline: none;
-      position: relative;
+      max-width: .6rem;
+      position: absolute;
+      right: .5rem;
+      top: 3.5em;
       width: 100%;
+      z-index: 10000;
     }
 
     a {
@@ -161,6 +174,9 @@
       .video video {
         height: auto;
         width: 80%;
+      }
+      > img {
+        display: block;
       }
 
       a {
