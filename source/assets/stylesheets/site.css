@@ -588,6 +588,7 @@ ul {
   justify-content: center;
   margin: -2rem 5rem 0 0;
   width: 8.5rem;
+  z-index: 1000;
 }
 .landing h2 {
   font-size: 5em;
@@ -962,8 +963,8 @@ ul {
 .our-process .process-container > div > p {
   font-size: 1.2em;
   line-height: 2rem;
-  margin-left: 4rem;
-  margin-top: 0;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
 }
 .our-process .desktop-circle {
   display: none;
@@ -1108,9 +1109,9 @@ ul {
 .who-we-are > h1 {
   letter-spacing: 0.05em;
   font-size: 4.5em;
-  margin: 5rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 .who-we-are > h1 .we-turquoise {
   color: #72DDDD;
@@ -1339,17 +1340,22 @@ ul {
     position: relative;
   }
   .our-work .ourwork-header h1 {
-    margin: 12rem 0 2rem 3rem;
-    padding-right: 10rem;
+    font-size: 6em;
+    margin: 12rem 0 0 3rem;
+    padding: 1rem 10rem 1rem 2rem;
+    width: 35rem;
   }
   .our-work .ourwork-header > a {
-    margin: 0 0 10rem 0;
+    font-size: 1em;
+    height: 8rem;
+    margin: 1rem 0 5rem 0;
+    width: 8rem;
   }
   .our-work > img {
     cursor: pointer;
     display: block;
     height: auto;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     max-width: 8rem;
   }
   .our-work .projects {
@@ -1374,9 +1380,9 @@ ul {
   }
   .our-work .projects .solidkraft, .our-work .projects .agendame, .our-work .projects .exeed {
     height: auto;
-    margin: 0 3rem 3rem 0;
+    margin: 0 3rem 2rem 0;
     padding: 0;
-    width: auto;
+    width: 28rem;
   }
   .our-work .projects .solidkraft > img, .our-work .projects .agendame > img, .our-work .projects .exeed > img {
     height: auto;
@@ -1402,7 +1408,7 @@ ul {
   }
   .our-work .projects .arrows {
     align-items: center;
-    bottom: 10rem;
+    bottom: 8rem;
     display: flex;
     position: absolute;
     right: 8rem;
@@ -1415,7 +1421,7 @@ ul {
   }
   .our-work .projects .exeed {
     height: auto;
-    width: auto;
+    width: 28rem;
   }
 }
 .work-with-us {
@@ -1445,11 +1451,12 @@ ul {
   border-top-right-radius: 3.3rem;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 2.3rem;
+  padding: 0 2rem 3.3rem;
 }
 .work-with-us .work-with-us-form > h1 {
   font-size: 1.5em;
   margin: 5rem auto 8rem auto;
+  z-index: 1000;
 }
 .work-with-us .work-with-us-form input {
   background-color: #F7F7F7;
@@ -1495,7 +1502,7 @@ ul {
     background-color: #1E1F21;
     border-bottom-right-radius: 3.3rem;
     border-top-right-radius: 3.3rem;
-    height: 45rem;
+    height: 42rem;
   }
   .work-with-us .enticement .big-idea {
     border: 0;
@@ -1511,13 +1518,13 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 0 0 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
   }
   .work-with-us .enticement .links > a {
     align-self: flex-end;
     border-bottom: 1px solid #fff;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     margin-top: 3rem;
     padding-bottom: 1rem;
     width: 25rem;
@@ -1532,14 +1539,15 @@ ul {
   .work-with-us .work-with-us-form {
     border-bottom-left-radius: 3.3rem;
     border-top-right-radius: 0;
-    margin: 10rem 0 5rem 0;
+    margin: 1.5rem 0 5rem 0;
     width: 50rem;
   }
   .work-with-us .work-with-us-form input {
-    margin: 0 0 6rem 2rem;
+    margin: 0 0 4rem 2rem;
+    padding-bottom: 0;
   }
   .work-with-us .work-with-us-form textarea {
-    margin: 0 0 3rem 2rem;
+    margin: 0 0 1rem 2rem;
   }
 }
 .footer {
@@ -2001,17 +2009,18 @@ ul {
     width: 100%;
   }
   .our-work .spheres img:nth-child(1) {
-    left: 0;
-    max-width: 14rem;
-    top: 70%;
+    left: 1rem;
+    max-width: 11rem;
+    top: 68%;
   }
   .our-work .spheres img:nth-child(2) {
     left: 45%;
-    max-width: 12rem;
-    top: 0.5rem;
+    max-width: 8rem;
+    top: 2rem;
   }
   .our-work .spheres-2 {
     bottom: 0;
+    display: block;
     left: 0;
     position: absolute;
     right: 0;
@@ -2027,7 +2036,7 @@ ul {
     width: 100%;
   }
   .our-work .spheres-2 img:nth-child(1) {
-    left: 50%;
+    left: 42%;
     max-width: 10rem;
     top: 70%;
   }
@@ -2043,7 +2052,7 @@ ul {
   .work-with-us .work-with-us-sphere {
     height: auto;
     margin: 0;
-    max-width: 12rem;
+    max-width: 10rem;
     position: absolute;
     right: 0;
     top: 0;

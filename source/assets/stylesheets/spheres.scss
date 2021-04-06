@@ -349,18 +349,19 @@
         width: 100%;
       }
       img:nth-child(1) {
-        left: 0;
-        max-width: 14rem;
-        top: 70%;
+        left: 1rem;
+        max-width: 11rem;
+        top: 68%;
       }
       img:nth-child(2) {
         left: 45%;
-        max-width: 12rem;
-        top: 0.5rem;
+        max-width: 8rem;
+        top: 2rem;
       }
     }
     .spheres-2 {
       bottom: 0;
+      display: block;
       left: 0;
       position: absolute;
       right: 0;
@@ -376,7 +377,7 @@
         width: 100%;
       }
       img:nth-child(1) {
-        left: 50%;
+        left: 42%;
         max-width: 10rem;
         top: 70%;
       }
@@ -392,7 +393,7 @@
     .work-with-us-sphere {
       height: auto;
       margin: 0;
-      max-width: 12rem;
+      max-width: 10rem;
       position: absolute;
       right: 0;
       top: 0;
