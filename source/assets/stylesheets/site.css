@@ -588,6 +588,7 @@ ul {
   justify-content: center;
   margin: -2rem 5rem 0 0;
   width: 8.5rem;
+  z-index: 1000;
 }
 .landing h2 {
   font-size: 5em;
@@ -753,14 +754,6 @@ ul {
   background-color: #fff;
   grid-area: services;
 }
-.services .cover {
-  background-color: #fff;
-  height: 11rem;
-  margin: 0;
-  position: relative;
-  width: 100%;
-  z-index: 100;
-}
 .services .services-top-line {
   border-top: 2px solid rgba(0, 0, 0, 0.9);
   margin-top: 0rem;
@@ -897,21 +890,6 @@ ul {
   grid-area: process;
   position: relative;
 }
-.our-process .cover {
-  background-color: #fff;
-  height: 10rem;
-  position: absolute;
-  width: 100%;
-  z-index: -100;
-}
-.our-process .cover-bottom {
-  background-color: #fff;
-  bottom: 0;
-  height: 8rem;
-  position: absolute;
-  width: 100%;
-  z-index: -1000;
-}
 .our-process > h1 {
   border-bottom: 2px solid rgba(0, 0, 0, 0.9);
   border-top: 2px solid rgba(0, 0, 0, 0.9);
@@ -962,8 +940,8 @@ ul {
 .our-process .process-container > div > p {
   font-size: 1.2em;
   line-height: 2rem;
-  margin-left: 4rem;
-  margin-top: 0;
+  margin-left: 3rem;
+  margin-top: 0.5rem;
 }
 .our-process .desktop-circle {
   display: none;
@@ -1093,24 +1071,12 @@ ul {
   padding-bottom: 4rem;
   position: relative;
 }
-.who-we-are .cover {
-  background-color: #1E1F21;
-  display: none;
-  height: 7rem;
-  margin: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-}
-.who-we-are .cover-bottom {
-  bottom: 0;
-}
 .who-we-are > h1 {
   letter-spacing: 0.05em;
   font-size: 4.5em;
-  margin: 5rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 .who-we-are > h1 .we-turquoise {
   color: #72DDDD;
@@ -1339,17 +1305,22 @@ ul {
     position: relative;
   }
   .our-work .ourwork-header h1 {
-    margin: 12rem 0 2rem 3rem;
-    padding-right: 10rem;
+    font-size: 6em;
+    margin: 12rem 0 0 3rem;
+    padding: 1rem 10rem 1rem 2rem;
+    width: 35rem;
   }
   .our-work .ourwork-header > a {
-    margin: 0 0 10rem 0;
+    font-size: 1em;
+    height: 8rem;
+    margin: 1rem 0 5rem 0;
+    width: 8rem;
   }
   .our-work > img {
     cursor: pointer;
     display: block;
     height: auto;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     max-width: 8rem;
   }
   .our-work .projects {
@@ -1374,9 +1345,9 @@ ul {
   }
   .our-work .projects .solidkraft, .our-work .projects .agendame, .our-work .projects .exeed {
     height: auto;
-    margin: 0 3rem 3rem 0;
+    margin: 0 3rem 2rem 0;
     padding: 0;
-    width: auto;
+    width: 28rem;
   }
   .our-work .projects .solidkraft > img, .our-work .projects .agendame > img, .our-work .projects .exeed > img {
     height: auto;
@@ -1402,7 +1373,7 @@ ul {
   }
   .our-work .projects .arrows {
     align-items: center;
-    bottom: 10rem;
+    bottom: 8rem;
     display: flex;
     position: absolute;
     right: 8rem;
@@ -1415,7 +1386,7 @@ ul {
   }
   .our-work .projects .exeed {
     height: auto;
-    width: auto;
+    width: 28rem;
   }
 }
 .work-with-us {
@@ -1445,11 +1416,12 @@ ul {
   border-top-right-radius: 3.3rem;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 2.3rem;
+  padding: 0 2rem 3.3rem;
 }
 .work-with-us .work-with-us-form > h1 {
   font-size: 1.5em;
   margin: 5rem auto 8rem auto;
+  z-index: 1000;
 }
 .work-with-us .work-with-us-form input {
   background-color: #F7F7F7;
@@ -1495,7 +1467,7 @@ ul {
     background-color: #1E1F21;
     border-bottom-right-radius: 3.3rem;
     border-top-right-radius: 3.3rem;
-    height: 45rem;
+    height: 42rem;
   }
   .work-with-us .enticement .big-idea {
     border: 0;
@@ -1511,13 +1483,13 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 0 0 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
   }
   .work-with-us .enticement .links > a {
     align-self: flex-end;
     border-bottom: 1px solid #fff;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     margin-top: 3rem;
     padding-bottom: 1rem;
     width: 25rem;
@@ -1532,14 +1504,15 @@ ul {
   .work-with-us .work-with-us-form {
     border-bottom-left-radius: 3.3rem;
     border-top-right-radius: 0;
-    margin: 10rem 0 5rem 0;
+    margin: 1.5rem 0 5rem 0;
     width: 50rem;
   }
   .work-with-us .work-with-us-form input {
-    margin: 0 0 6rem 2rem;
+    margin: 0 0 4rem 2rem;
+    padding-bottom: 0;
   }
   .work-with-us .work-with-us-form textarea {
-    margin: 0 0 3rem 2rem;
+    margin: 0 0 1rem 2rem;
   }
 }
 .footer {
@@ -1661,401 +1634,6 @@ ul {
   .footer p {
     border: 0;
     margin: 0 0 2rem 0;
-  }
-}
-.landing .spheres {
-  align-items: flex-start;
-  bottom: 0;
-  display: flex;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-.landing .spheres img {
-  height: auto;
-  margin: 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: -1000;
-}
-.landing .spheres img:nth-child(1) {
-  max-width: 3rem;
-  top: 7rem;
-}
-.landing .spheres img:nth-child(2) {
-  left: 6rem;
-  max-width: 6rem;
-  top: 14rem;
-}
-.landing .spheres img:nth-child(3) {
-  left: 100%;
-  max-width: 15rem;
-}
-.landing .spheres-2 {
-  align-items: flex-start;
-  bottom: 0;
-  display: flex;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-.landing .spheres-2 img {
-  height: auto;
-  margin: 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: -1000;
-}
-.landing .spheres-2 img:nth-child(1) {
-  left: 3rem;
-  max-width: 10rem;
-  top: 35rem;
-}
-.landing .spheres-2 img:nth-child(2) {
-  left: 12rem;
-  max-width: 6rem;
-  top: 30rem;
-}
-.landing .spheres-2 img:nth-child(3) {
-  left: 70%;
-  max-width: 8rem;
-  top: 38rem;
-}
-
-.services {
-  position: relative;
-}
-.services .spheres {
-  align-items: flex-start;
-  bottom: 0;
-  display: flex;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-.services .spheres img {
-  height: auto;
-  margin: 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.services .spheres img:nth-child(1) {
-  left: 22%;
-  max-width: 6rem;
-  top: 14rem;
-}
-.services .spheres img:nth-child(2) {
-  left: 70%;
-  max-width: 6rem;
-}
-.services .spheres img:nth-child(3) {
-  left: 100%;
-  max-width: 7rem;
-  top: 40%;
-}
-.services .spheres-2 {
-  align-items: flex-start;
-  bottom: 0;
-  display: flex;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-}
-.services .spheres-2 img {
-  height: auto;
-  margin: 0;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.services .spheres-2 img:nth-child(1) {
-  max-width: 5rem;
-  top: 38rem;
-}
-.services .spheres-2 img:nth-child(2) {
-  left: 55%;
-  max-width: 8rem;
-  top: 45rem;
-}
-.services .spheres-2 img:nth-child(3) {
-  max-width: 6rem;
-  top: 60rem;
-}
-.services .spheres-2 img:nth-child(4) {
-  left: 70%;
-  max-width: 7rem;
-  top: 65rem;
-}
-
-.our-process {
-  position: relative;
-}
-.our-process .sphere-process {
-  position: absolute;
-  height: auto;
-  margin-right: 2rem;
-  max-width: 10rem;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-.our-process .spheres {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: -1000;
-}
-.our-process .spheres img {
-  height: auto;
-  left: 40%;
-  margin: 0;
-  margin-top: 15rem;
-  max-width: 12rem;
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-
-.who-we-are .spheres, .who-we-are .spheres-2, .our-work .spheres, .our-work .spheres-2 {
-  display: none;
-}
-
-.spheres-landing-desktop {
-  display: none;
-}
-
-.desktop-sphere {
-  display: none;
-}
-
-@media screen and (min-width: 55em) {
-  .landing .spheres, .landing .spheres-2 {
-    display: none;
-  }
-
-  .spheres-landing-desktop {
-    bottom: 0;
-    display: block;
-    height: 210%;
-    left: 0;
-    position: absolute;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1000;
-  }
-  .spheres-landing-desktop img {
-    height: auto;
-    max-width: 8rem;
-    position: sticky;
-    top: 0;
-    width: 100%;
-  }
-  .spheres-landing-desktop img:nth-child(1) {
-    left: 2rem;
-    top: 50%;
-  }
-  .spheres-landing-desktop img:nth-child(2) {
-    left: 2rem;
-    top: 85%;
-  }
-  .spheres-landing-desktop img:nth-child(3) {
-    left: 25rem;
-    top: 60%;
-  }
-  .spheres-landing-desktop img:nth-child(4) {
-    left: 50rem;
-    max-width: 10rem;
-    top: 75%;
-  }
-
-  .services .spheres img:nth-child(1) {
-    left: 3rem;
-    max-width: 8rem;
-    top: 20%;
-  }
-  .services .spheres img:nth-child(2) {
-    left: 50%;
-    max-width: 8rem;
-    top: 3rem;
-  }
-  .services .spheres img:nth-child(3) {
-    left: 100%;
-    max-width: 5rem;
-    top: 70%;
-    z-index: 1;
-  }
-  .services .spheres-2 img:nth-child(1) {
-    left: 5rem;
-    max-width: 8rem;
-    top: 90%;
-  }
-  .services .spheres-2 img:nth-child(2) {
-    left: 30%;
-    max-width: 8rem;
-    top: 60%;
-  }
-  .services .spheres-2 img:nth-child(3) {
-    left: 80%;
-    max-width: 8rem;
-    top: -3rem;
-  }
-
-  .our-process .sphere-process {
-    margin-right: 15rem;
-    max-width: 15rem;
-  }
-  .our-process .spheres img {
-    left: 0;
-    margin: 0;
-    max-width: 8rem;
-    opacity: 0.4;
-    z-index: 10;
-  }
-  .our-process .spheres img:nth-child(2) {
-    left: 20rem;
-    top: 70%;
-  }
-  .our-process .spheres img:nth-child(3) {
-    left: 55%;
-    top: 0;
-  }
-  .our-process .spheres img:nth-child(4) {
-    left: 85%;
-    top: 85%;
-  }
-
-  .who-we-are .cover {
-    display: block;
-  }
-  .who-we-are .spheres {
-    bottom: 0;
-    display: block;
-    left: 0;
-    position: absolute;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-  .who-we-are .spheres img {
-    height: auto;
-    margin: 0;
-    max-width: 5rem;
-    position: sticky;
-    top: 0;
-    width: 100%;
-  }
-  .who-we-are .spheres img:nth-child(1) {
-    left: 5rem;
-    top: 15%;
-  }
-  .who-we-are .spheres img:nth-child(2) {
-    left: 35%;
-    top: 40%;
-  }
-  .who-we-are .spheres img:nth-child(3) {
-    left: 70%;
-    top: 70%;
-  }
-
-  .our-work .spheres {
-    bottom: 0;
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1000;
-  }
-  .our-work .spheres img {
-    height: auto;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  .our-work .spheres img:nth-child(1) {
-    left: 0;
-    max-width: 14rem;
-    top: 70%;
-  }
-  .our-work .spheres img:nth-child(2) {
-    left: 45%;
-    max-width: 12rem;
-    top: 0.5rem;
-  }
-  .our-work .spheres-2 {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1000;
-  }
-  .our-work .spheres-2 img {
-    height: auto;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  .our-work .spheres-2 img:nth-child(1) {
-    left: 50%;
-    max-width: 10rem;
-    top: 70%;
-  }
-  .our-work .spheres-2 img:nth-child(2) {
-    left: 80%;
-    max-width: 7rem;
-    top: 2rem;
-  }
-
-  .work-with-us {
-    position: relative;
-  }
-  .work-with-us .work-with-us-sphere {
-    height: auto;
-    margin: 0;
-    max-width: 12rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-
-  .mobile-sphere {
-    display: none;
-  }
-
-  .desktop-sphere {
-    display: inline;
   }
 }
 

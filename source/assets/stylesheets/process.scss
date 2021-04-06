@@ -1,21 +1,7 @@
 .our-process {
   grid-area: process;
   position: relative;
-  .cover {
-    background-color: $base-background-1;
-    height: 10rem;
-    position: absolute;
-    width: 100%;
-    z-index: -100;
-  }
-  .cover-bottom {
-    background-color: $base-background-1;
-    bottom: 0;
-    height: 8rem;
-    position: absolute;
-    width: 100%;
-    z-index: -1000;
-  }
+
   > h1 {
     border-bottom: 2px solid $base-border-color-1;
     border-top: 2px solid $base-border-color-1;
@@ -64,8 +50,8 @@
       > p {
         font-size: $font-size-content;
         line-height: 2rem;
-        margin-left: 4rem;
-        margin-top: 0;
+        margin-left: 3rem;
+        margin-top: .5rem;
       }
     }
   }

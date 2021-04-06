@@ -7,24 +7,12 @@
   padding-bottom: 4rem;
   position: relative;
 
-  .cover {
-    background-color: #1E1F21;
-    display: none;
-    height: 7rem;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-  }
-  .cover-bottom {
-    bottom: 0;
-  }
   > h1 {
     letter-spacing: 0.05em;
     font-size: 4.5em;
-    margin: 5rem auto 0 auto;
+    margin: 6rem auto 0 auto;
     position: relative;
-    z-index: 10;
+    z-index: 1000;
     .we-turquoise {
       color: $exeed-turquoise;
       letter-spacing: 0.1em;
