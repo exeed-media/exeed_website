@@ -1,0 +1,509 @@
+body {
+  section {
+    min-height: 0;
+  }
+  > header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 3rem 0 3rem ;
+    img {
+      cursor: pointer;
+      height: auto;
+      margin: 0;
+      max-width: 2rem;
+      width: 100%;
+      &:first-child {
+        max-width: 8rem;
+      }
+    }
+  }
+}
+.agendame-concept {
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  .concept {
+    letter-spacing: 0.07em;
+    line-height: 1.5em;
+    margin: 6.5rem 1rem 4rem 4rem;
+    p {
+      border-bottom: 1px solid $black;
+      border-top: 1px solid $black;
+      font-size: $small-font-size;
+      padding: 1.5rem 0;
+      margin: 0;
+    }
+    > span {
+      font-size: .7em;
+    }
+    h2 {
+      font-size: 5.5em;
+      letter-spacing: 0.07em;
+      margin: 4rem 0 0 0;
+      text-align: center;
+      > span {
+        color: $exeed-turquoise;
+      }
+    }
+  }
+  .agendame-screen {
+    position: relative;
+    > img {
+      filter: brightness(75%);
+      height: auto;
+      max-width: 80rem;
+      min-width: 10rem;
+      width: 100%;
+      }
+      .desktop-screen {
+        display: none;
+      }
+    > div {
+      align-items: center;
+      background-color: $exeed-turquoise;
+      border-radius: 50%;
+      bottom: 0;
+      cursor: pointer;
+      display: flex;
+      height: 5.5rem;
+      justify-content: center;
+      left: -2.5rem;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      width: 5.5rem;
+      img {
+        width: auto;
+      }
+      a {
+        color: $link-color;
+        display: none;
+        font-size: .6em;
+        letter-spacing: .07em;
+        margin: 0;
+      }
+    }
+  }
+}
+.second-concept {
+  align-items: center;
+  border-top: 1px solid $black;
+  display: flex;
+  margin: 1rem 2rem 5rem 4rem;
+  padding-top: 2rem;
+  > div {
+    border-top: 5px solid $exeed-turquoise;
+    margin: 0;
+    margin-right: 1rem;
+    width: 50rem;
+  }
+  > p {
+    font-size: .8em;
+    line-height: 1.4em;
+    letter-spacing: 0.07em;
+    margin: 0;
+  }
+}
+.branding {
+  text-align: center;
+  > img {
+    height: auto;
+    margin: 7rem auto;
+    max-width: 27rem;
+    width: 100%;
+  }
+  > div {
+    align-items: center;
+    background-color: $base-background-2;
+    display: flex;
+    height: 24rem;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    img {
+      height: auto;
+      max-width: 12rem;
+      width: 100%;
+    }
+    h2 {
+      border-bottom: 1px solid $base-border-color-2;
+      color: $exeed-turquoise;
+      display: flex;
+      font-size: $medium-font-size;
+      justify-content: flex-start;
+      left: 0;
+      letter-spacing: 0.07em;
+      margin: 0 0 0 3rem;
+      padding: 0 1rem;
+      position: absolute;
+      top: -2.8rem;
+    }
+    .red-circle {
+      background-color: #FF3232;
+      border-radius: 50%;
+      display: none;
+      height: 3rem;
+      position: absolute;
+      right: 10rem;
+      width: 3rem;
+    }
+  }
+}
+.color-palette {
+  > h3 {
+    border-bottom: 1px solid $black;
+    font-size: $small-font-size;
+    font-weight: $sans-serif-regular;
+    letter-spacing: 0.07em;
+    margin: 7rem 2rem 3rem 2rem;
+    padding: .2rem .5rem;
+    text-align: right;
+  }
+  .colors {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8rem;
+    .color {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-size: $small-font-size;
+      > div {
+        box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+        height: 4rem;
+        margin-bottom: 0;
+        width: 4rem;
+      }
+      > div.black {
+        background-color: $black;
+      }
+      > div.dark-gray {
+        background-color: #32383F;
+      }
+      > div.light-grey {
+        background-color: #F6F6F6;
+      }
+      > div.white {
+        background-color: $white;
+        border: 1px solid $black;
+      }
+    }
+  }
+}
+.typography {
+  position: relative;
+  > h2 {
+    border-bottom: 1px solid $black;
+    display: inline;
+    color: $exeed-turquoise;
+    font-size: $agendame-typography-font-size;
+    letter-spacing: 0.07em;
+    padding-bottom: .7rem;
+  }
+  > h3 {
+    font-family: $agendame-font-family;
+    font-size: $agendame-typography-font-size;
+    font-weight: $sans-serif-light;
+    letter-spacing: 0.07em;
+    margin: 0;
+    position: absolute;
+    right: -1.5rem;
+    top: 15rem;
+    transform: rotate(90deg);
+  }
+  .reem-typography {
+    .agendame-typography {
+      align-items: center;
+      border: .5rem solid $black;
+      border-radius: 1rem;
+      display: flex;
+      font-family: $agendame-font-family;
+      font-size: 2.4em;
+      height: 18vh;
+      justify-content: center;
+      letter-spacing: .07em;
+      margin: 7rem 2rem 0 2rem;
+      width: 60vw;
+    }
+  }
+  .typography-sphere {
+    background-color: $exeed-turquoise;
+    border-radius: 50%;
+    height: 20vw;
+    margin-top: -3rem;
+    width: 20vw;
+  }
+}
+.design {
+  margin-bottom: 4rem;
+  text-align: center;
+  > img {
+    height: auto;
+    margin-top: 10rem;
+    max-width: 20rem;
+    width: 100%;
+  }
+  .agendame-app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    margin: 0 3rem;
+    > img {
+      height: auto;
+      margin: 0;
+      max-width: 12rem;
+      width: 100%;
+    }
+  }
+  .design-line {
+    border-top: 1px solid $black;
+    margin: 4rem auto;
+    width: 25rem;
+  }
+  .agendame_website {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    img {
+      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+      height: auto;
+      width: 100%;
+    }
+    > img {
+      max-width: 15rem;
+    }
+    .agendame-web {
+      display: flex;
+      flex-direction: column;
+      img {
+        margin: .3rem 0;
+        max-width: 15rem;
+      }
+    }
+    .visit-website {
+      align-items: center;
+      background-color: $exeed-turquoise;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      height: 6.5rem;
+      justify-content: center;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      width: 6.5rem;
+      img {
+        margin: 0;
+        width: auto;
+      }
+    }
+  }
+}
+footer.footer {
+  flex-direction: column;
+  padding: 0;
+  > p {
+    border: 0;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content-menu {
+    justify-content: center;
+    text-align: center;
+  }
+  h2 {
+    align-self: center;
+    border-bottom: 1px solid $base-border-color-2;
+    font-size: 2.8em;
+    margin-bottom: 3.5rem;
+    padding-bottom: 1.5rem;
+    strong {
+      display: block;
+      margin: 0 0 0 1rem;
+    }
+  }
+}
+@media (min-width: 55rem) {
+  .agendame-concept {
+    .concept {
+      p {
+        margin-right: 8rem;
+        padding-left: .5rem;
+        padding-right: 1rem;
+      }
+      h2 {
+        font-size: 7em;
+      }
+    }
+    .agendame-screen {
+      .desktop-screen {
+        display: block;
+        height: auto;
+        margin: 0;
+        max-width: 60rem;
+        min-width: 20rem;
+        width: 100%;
+      }
+      .mobile-screen {
+        display: none;
+      }
+      > div {
+        height: 8rem;
+        left: -5rem;
+        width: 8rem;
+        img {
+          display: none;
+        }
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  .second-concept {
+    margin: 1rem 4rem 5rem 4rem;
+    > div {
+      margin: 0 8rem;
+      width: 45rem;
+    }
+    > p {
+      margin-right: 12rem;
+    }
+  }
+  .branding {
+    > img {
+      max-width: 45rem;
+      min-width: 20rem;
+    }
+    > div {
+      height: 30rem;
+      h2 {
+        font-size:5em;
+      }
+      img {
+        max-width: 15rem;
+      }
+      .red-circle {
+        display: block;
+      }
+    }
+  }
+  .color-palette {
+    > h3 {
+      margin-left: 0;
+    }
+    .colors {
+      .color {
+        > div {
+          height: 7rem;
+          width: 7rem;
+        }
+      }
+    }
+  }
+  .typography {
+    > h2 {
+      display: block;
+      font-size: $title-font-size;
+      margin-right: 2rem;
+      padding-bottom: 3rem;
+      text-align: right;
+    }
+    > h3 {
+      font-size: $title-font-size;
+      right: -8rem;
+      top: 18rem;
+    }
+    .reem-typography {
+      .agendame-typography {
+        border: 1rem solid $black;
+        font-size: 4em;
+        height: 25rem;
+        margin: 7rem 2rem 0 2rem;
+        position: relative;
+        width: 40rem;
+        z-index: -1;
+        .red-circle {
+          background-color: #FF3232;
+          border-radius: 50%;
+          bottom: 5rem;
+          height: 4rem;
+          position: absolute;
+          right: 4rem;
+          width: 4rem;
+        }
+      }
+    }
+  }
+  .design {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    > img {
+      max-width: 25rem;
+    }
+    .agendame-app {
+      margin: 0 4rem;
+    }
+    .design-line {
+      display: none;
+    }
+    .agendame_website {
+      display: none;
+    }
+  }
+  footer.footer {
+    flex-direction: row;
+    padding-top: 2rem;
+    .content {
+      flex-direction: row-reverse;
+    }
+    .content-menu {
+      text-align: left;
+    }
+    h2 {
+      border: 0;
+      strong {
+        display: inline;
+        margin: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 80em) {
+  .agendame-concept {
+    .concept {
+      p {
+        font-size: 1.1em;
+        margin-right: 15rem;
+      }
+      h2 {
+        font-size: 9em;
+      }
+    }
+    .agendame-screen {
+      .desktop-screen {
+        display: block;
+        height: auto;
+        max-width: 60rem;
+        min-width: 25rem;
+        width: 100%;
+      }
+      > div {
+        height: 11rem;
+        width: 11rem;
+      }
+    }
+  }
+}

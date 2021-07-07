@@ -4,14 +4,29 @@ $exeed-turquoise: #72DDDD;
 $base-background-1: $white;
 $base-background-2: #1E1F21;
 
+$landing-video-background: $black;
+
 $service-website-background: #829191;
 $service-content-background: $exeed-turquoise;
 $service-video-background: #26547C;
 $service-marketing-background: #EF476F;
 $service-branding-background: #E85517;
+$workwithus-form-background: #F7F7F7;
+
+$ourwork-font-color: $white;
+$workwithus-font-color: $white;
+$footer-font-color: $white;
 
 // Font sizes
 $font-size-content: 1.2em;
+$title-font-size: 5em;
+$subtitle-font-size: 1.5em;
+$small-font-size: .9em;
+$medium-font-size: 4em;
+
+$ourwork-title-size: 7em;
+$footer-menu-font-size: 2em;
+$agendame-typography-font-size: 3.7em;
 
 // Font weights
 $sans-serif-light: 300;
@@ -20,7 +35,7 @@ $sans-serif-medium: 500;
 $sans-serif-semibold: 600;
 
 // Line height
-$base-line-height: 1.4;
+$base-line-height: 1.4em;
 
 // Borders
 $base-border-color-1: rgba(0, 0, 0, .9);
